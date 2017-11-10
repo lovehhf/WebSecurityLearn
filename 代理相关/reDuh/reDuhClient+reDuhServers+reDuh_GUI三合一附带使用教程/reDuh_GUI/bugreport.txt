@@ -1,0 +1,1504 @@
+date/time         : 2011-06-12, 16:30:28, 984ms
+computer name     : REDICE
+user name         : Administrator <admin>
+registered owner  : redice / taoyard.com
+operating system  : Windows 2003 Service Pack 2 build 3790
+system language   : Chinese
+system up time    : 2 hours 55 minutes
+program up time   : 16 minutes 18 seconds
+processors        : 2x AMD Athlon(tm) 64 X2 Dual Core Processor 5200+
+physical memory   : 231/1983 MB (free/total)
+free disk space   : (C:) 2.74 GB
+display mode      : 1920x1080, 32 bit
+process id        : $14c4
+allocated memory  : 14.97 MB
+executable        : 渗透终极利器reDuh GUI(图).exe
+exec. date/time   : 2009-07-28 21:52
+compiled with     : BCB 2009
+madExcept version : 3.0i beta 2
+callstack crc     : $1a452fb4, $b9ae7834, $6a9e98ff
+exception number  : 1
+exception class   : EAccessViolation
+exception message : Access violation at address 004071DF in module '渗透终极利器reDuh GUI(图).exe'. Write of address 726F5079.
+
+main thread ($824):
+004071df +007 渗透终极利器reDuh GUI(图).exe nsServer.cpp     127 +2 nsServer.Stop
+00413a76 +022 渗透终极利器reDuh GUI(图).exe tunnelThread.cpp 202 +5 TTunnelThread.Stop
+00409302 +142 渗透终极利器reDuh GUI(图).exe reDuchMain.cpp   261 +8 TForm1.clstnlBtnClick
+0047b65b +06f 渗透终极利器reDuh GUI(图).exe Controls                TControl.Click
+0044cb52 +01e 渗透终极利器reDuh GUI(图).exe Stdctrls                TCustomButton.Click
+0044d5c0 +010 渗透终极利器reDuh GUI(图).exe Stdctrls                TCustomButton.CNCommand
+0047b0f2 +2d2 渗透终极利器reDuh GUI(图).exe Controls                TControl.WndProc
+0047f5f7 +513 渗透终极利器reDuh GUI(图).exe Controls                TWinControl.WndProc
+0044c818 +06c 渗透终极利器reDuh GUI(图).exe Stdctrls                TButtonControl.WndProc
+0047ad18 +024 渗透终极利器reDuh GUI(图).exe Controls                TControl.Perform
+0047f747 +023 渗透终极利器reDuh GUI(图).exe Controls                _16950
+00480143 +00b 渗透终极利器reDuh GUI(图).exe Controls                TWinControl.WMCommand
+0047b0f2 +2d2 渗透终极利器reDuh GUI(图).exe Controls                TControl.WndProc
+0047f5f7 +513 渗透终极利器reDuh GUI(图).exe Controls                TWinControl.WndProc
+0047ed10 +02c 渗透终极利器reDuh GUI(图).exe Controls                TWinControl.MainWndProc
+00424658 +014 渗透终极利器reDuh GUI(图).exe Classes                 _17453
+77e2c332 +044 USER32.dll                                            SendMessageW
+77e2bf6f +016 USER32.dll                                            CallWindowProcW
+0047f6f3 +0d7 渗透终极利器reDuh GUI(图).exe Controls                TWinControl.DefaultHandler
+0047ba78 +010 渗透终极利器reDuh GUI(图).exe Controls                TControl.WMLButtonUp
+0047b9ee +06e 渗透终极利器reDuh GUI(图).exe Controls                TControl.WMMouseMove
+0047b0f2 +2d2 渗透终极利器reDuh GUI(图).exe Controls                TControl.WndProc
+0047f5f7 +513 渗透终极利器reDuh GUI(图).exe Controls                TWinControl.WndProc
+0044c818 +06c 渗透终极利器reDuh GUI(图).exe Stdctrls                TButtonControl.WndProc
+0047ed10 +02c 渗透终极利器reDuh GUI(图).exe Controls                TWinControl.MainWndProc
+00424658 +014 渗透终极利器reDuh GUI(图).exe Classes                 _17453
+77e2bacb +00a USER32.dll                                            DispatchMessageW
+0046e74d +11d 渗透终极利器reDuh GUI(图).exe Forms                   TApplication.ProcessMessage
+0046e77a +00a 渗透终极利器reDuh GUI(图).exe Forms                   TApplication.HandleMessage
+0046eaa5 +0c9 渗透终极利器reDuh GUI(图).exe Forms                   TApplication.Run
+0040734a +052 渗透终极利器reDuh GUI(图).exe reDuhGUI.cpp      21 +7 WinMain
+0049e866 +156 渗透终极利器reDuh GUI(图).exe                         __startup
+
+thread $1494: <priority:1>
+7c9577f7 +0a ntdll.dll                               NtRemoveIoCompletion
+004c751d +0d 渗透终极利器reDuh GUI(图).exe Madexcept _17200
+004c7587 +37 渗透终极利器reDuh GUI(图).exe Madexcept _17201
+>> created by main thread ($824) at:
+71a85da2 +00 mswsock.dll
+
+thread $13cc (ThttpDataQueueManager):
+7c956f67 +00a ntdll.dll                                                     NtDelayExecution
+7c801ed3 +047 kernel32.dll                                                  SleepEx
+7c8024f8 +00a kernel32.dll                                                  Sleep
+00406cd1 +8cd 渗透终极利器reDuh GUI(图).exe httpDataQueueManager.cpp 67 +36 ThttpDataQueueManager.Execute
+004c763b +02b 渗透终极利器reDuh GUI(图).exe Madexcept                       _17202
+00422f06 +042 渗透终极利器reDuh GUI(图).exe Classes                         _17295
+0043d2d4 +028 渗透终极利器reDuh GUI(图).exe System                          _16870
+004c751d +00d 渗透终极利器reDuh GUI(图).exe Madexcept                       _17200
+004c7587 +037 渗透终极利器reDuh GUI(图).exe Madexcept                       _17201
+>> created by main thread ($824) at:
+004063b2 +032 渗透终极利器reDuh GUI(图).exe httpDataQueueManager.cpp 26  +1 ThttpDataQueueManager.Create
+
+thread $1118 (TpopDataFromRemoteJSP):
+71b5150e +5e WS2HELP.dll                                                  WahReferenceContextByHandle
+71b62839 +9e WS2_32.dll                                                   select
+7c95a0d3 +dd ntdll.dll                                                    RtlAllocateHeap
+71b62f2d +6b WS2_32.dll                                                   send
+004c763b +2b 渗透终极利器reDuh GUI(图).exe Madexcept                      _17202
+00422f06 +42 渗透终极利器reDuh GUI(图).exe Classes                        _17295
+0043d2d4 +28 渗透终极利器reDuh GUI(图).exe System                         _16870
+004c751d +0d 渗透终极利器reDuh GUI(图).exe Madexcept                      _17200
+004c7587 +37 渗透终极利器reDuh GUI(图).exe Madexcept                      _17201
+>> created by main thread ($824) at:
+0040209e +32 渗透终极利器reDuh GUI(图).exe popDataFromRemoteJSP.cpp 32 +1 TpopDataFromRemoteJSP.Create
+
+thread $394 (TTunnelThread):
+7c956f67 +0a ntdll.dll                                              NtDelayExecution
+7c801ed3 +47 kernel32.dll                                           SleepEx
+7c8024f8 +0a kernel32.dll                                           Sleep
+00413a22 +9a 渗透终极利器reDuh GUI(图).exe tunnelThread.cpp 182 +14 TTunnelThread.Execute
+004c763b +2b 渗透终极利器reDuh GUI(图).exe Madexcept                _17202
+00422f06 +42 渗透终极利器reDuh GUI(图).exe Classes                  _17295
+0043d2d4 +28 渗透终极利器reDuh GUI(图).exe System                   _16870
+004c751d +0d 渗透终极利器reDuh GUI(图).exe Madexcept                _17200
+004c7587 +37 渗透终极利器reDuh GUI(图).exe Madexcept                _17201
+>> created by main thread ($824) at:
+004135d6 +46 渗透终极利器reDuh GUI(图).exe tunnelThread.cpp 159  +1 TTunnelThread.Create
+
+thread $12ec:
+7c957d27 +0a ntdll.dll                                          NtWaitForSingleObject
+71b71021 +82 WS2_32.dll                                         WSAAccept
+71b712bd +12 WS2_32.dll                                         accept
+00406ed1 +95 渗透终极利器reDuh GUI(图).exe nsServer.cpp     149 ThttpDataQueueManager.Destroy
+004c751d +0d 渗透终极利器reDuh GUI(图).exe Madexcept            _17200
+004c7587 +37 渗透终极利器reDuh GUI(图).exe Madexcept            _17201
+>> created by thread $394 (TTunnelThread) at:
+00407195 +1d 渗透终极利器reDuh GUI(图).exe nsServer.cpp 114  +3 nsServer.Start
+
+modules:
+00390000 SSLEAY32.dll           0.9.8.8         C:\Documents and Settings\Administrator\My Documents\Downloads\re0uhgsent\渗透终极利器reDuh GUI(图)
+00400000 渗透终极利器reDuh GUI(图).exe                 C:\Documents and Settings\Administrator\My Documents\Downloads\re0uhgsent\渗透终极利器reDuh GUI(图)
+00550000 LIBEAY32.dll           0.9.8.8         C:\Documents and Settings\Administrator\My Documents\Downloads\re0uhgsent\渗透终极利器reDuh GUI(图)
+10000000 LIBCURL.DLL            7.19.5.0        C:\Documents and Settings\Administrator\My Documents\Downloads\re0uhgsent\渗透终极利器reDuh GUI(图)
+4c510000 msctfime.ime           5.2.3790.3959   C:\WINDOWS\system32
+69660000 hnetcfg.dll            5.2.3790.3959   C:\WINDOWS\system32
+71a40000 wshtcpip.dll           5.2.3790.3959   C:\WINDOWS\System32
+71a80000 mswsock.dll            5.2.3790.4318   C:\WINDOWS\system32
+71ad0000 uxtheme.dll            6.0.3790.3959   C:\WINDOWS\system32
+71b10000 WSOCK32.DLL            5.2.3790.0      C:\WINDOWS\system32
+71b50000 WS2HELP.dll            5.2.3790.3959   C:\WINDOWS\system32
+71b60000 WS2_32.dll             5.2.3790.3959   C:\WINDOWS\system32
+74ae0000 USP10.dll              1.422.3790.3959 C:\WINDOWS\system32
+75d60000 apphelp.dll            5.2.3790.3959   C:\WINDOWS\system32
+76170000 MSIMG32.DLL            5.2.3790.0      C:\WINDOWS\system32
+76180000 IMM32.DLL              5.2.3790.3959   C:\WINDOWS\system32
+761a0000 COMDLG32.DLL           6.0.3790.3959   C:\WINDOWS\system32
+76eb0000 Secur32.dll            5.2.3790.4455   C:\WINDOWS\system32
+774b0000 OLE32.DLL              5.2.3790.3959   C:\WINDOWS\system32
+775f0000 OLEAUT32.DLL           5.2.3790.4202   C:\WINDOWS\system32
+77b60000 VERSION.DLL            5.2.3790.3959   C:\WINDOWS\system32
+77b70000 msvcrt.dll             7.0.3790.3959   C:\WINDOWS\system32
+77bd0000 GDI32.dll              5.2.3790.4396   C:\WINDOWS\system32
+77c20000 RPCRT4.dll             5.2.3790.4502   C:\WINDOWS\system32
+77cd0000 COMCTL32.DLL           6.0.3790.3959   C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.3790.3959_x-ww_D8713E55
+77e10000 USER32.dll             5.2.3790.4033   C:\WINDOWS\system32
+77eb0000 SHLWAPI.dll            6.0.3790.3959   C:\WINDOWS\system32
+77f30000 ADVAPI32.DLL           5.2.3790.4455   C:\WINDOWS\system32
+78520000 MSVCR90.dll            9.0.30729.4148  C:\WINDOWS\WinSxS\x86_Microsoft.VC90.CRT_1fc8b3b9a1e18e3b_9.0.30729.4148_x-ww_D495AC4E
+7c800000 kernel32.dll           5.2.3790.4480   C:\WINDOWS\system32
+7c930000 ntdll.dll              5.2.3790.4455   C:\WINDOWS\system32
+7ca10000 SHELL32.dll            6.0.3790.4315   C:\WINDOWS\system32
+7f000000 LPK.DLL                5.2.3790.3959   C:\WINDOWS\system32
+
+processes:
+0000 Idle
+0004 System                      normal
+0190 smss.exe                    normal       C:\WINDOWS\system32
+01c0 csrss.exe
+01d8 winlogon.exe                high         C:\WINDOWS\system32
+0208 services.exe                normal       C:\WINDOWS\system32
+0214 lsass.exe                   normal       C:\WINDOWS\system32
+02bc nvsvc32.exe                 normal       C:\WINDOWS\system32
+02f4 svchost.exe                 normal       C:\WINDOWS\system32
+0324 svchost.exe
+0374 svchost.exe
+0398 svchost.exe
+03c4 svchost.exe                 normal       C:\WINDOWS\System32
+0448 spoolsv.exe                 normal       C:\WINDOWS\system32
+04a8 WVSScheduler.exe            normal       C:\Program Files\Acunetix\Web Vulnerability Scanner 6
+04dc cisvc.exe                   normal       C:\WINDOWS\system32
+04f0 DCService.exe               normal       C:\Documents and Settings\All Users\Application Data\DatacardService
+052c ftpservice.exe              normal       C:\Program Files\Sonic FTP Server
+05b0 jqs.exe                     idle         C:\Program Files\Java\jre6\bin
+05e4 mdm.exe                     normal       C:\Program Files\Common Files\Microsoft Shared\VS7Debug
+0620 sqlservr.exe                normal       C:\PROGRA~1\MICROS~4\MSSQL\binn
+0690 mysqld.exe                  normal       C:\Program Files\MySQL\MySQL Server 5.1\bin
+079c PhDdnsCore.exe              normal       C:\Program Files\Oray\PhDDNS
+07bc rserver3.exe                normal       C:\Program Files\Radmin Server
+0818 sntlkeyssrvr.exe            normal       C:\Program Files\Common Files\SafeNet Sentinel\Sentinel Keys Server
+0830 spnsrvnt.exe                normal       C:\Program Files\Common Files\SafeNet Sentinel\Sentinel Protection Server\WinNT
+0880 sntlsrtsrvr.exe             normal       C:\Program Files\Common Files\SafeNet Sentinel\Sentinel Security Runtime
+08a0 Serv-U.exe                  normal       C:\Program Files\RhinoSoft.com\Serv-U
+08f4 sqlbrowser.exe
+0910 sqlwriter.exe               normal       C:\Program Files\Microsoft SQL Server\90\Shared
+092c svchost.exe
+0980 svchost.exe                 normal       C:\WINDOWS\System32
+09cc vmnat.exe                   normal       C:\WINDOWS\system32
+0a14 EMSVR.EXE                   normal       C:\WINWEB~1
+0a2c svchost.exe                 normal       C:\WINDOWS\system32
+0a40 mssearch.exe                normal       C:\Program Files\Common Files\System\MSSearch\Bin
+0aa8 vmware-authd.exe            normal       C:\Program Files\VMware\VMware Workstation
+0b04 vmnetdhcp.exe               normal       C:\WINDOWS\system32
+0df4 Explorer.EXE                normal       C:\WINDOWS
+0e5c FamItrfc.Exe                high         C:\Program Files\Radmin Server
+01a8 TortoiseHgOverlayServer.exe normal       C:\Program Files\TortoiseHg
+01bc Everything-1.2.1.371.exe    normal       C:\Program Files\Everything-1.2.1.371
+01f0 googletalk.exe              normal       C:\Program Files\Google\Google Talk
+0358 issch.exe                   normal       C:\Program Files\Common Files\InstallShield\UpdateService
+0380 jusched.exe                 normal       C:\Program Files\Common Files\Java\Java Update
+03cc Skype.exe                   normal       c:\program files\skype\Phone
+05f0 YodaoDict.exe               normal       C:\Program Files\Youdao\Dict
+0520 everbox.exe                 normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\EverBox
+068c TSVNCache.exe               normal       C:\Program Files\TortoiseSVN\bin
+0b84 wmiprvse.exe
+0d54 skypePM.exe                 normal       C:\program files\skype\Plugin Manager
+05cc wing.exe                    normal       C:\Program Files\Wing IDE 3.2\bin
+0484 conime.exe                  normal       C:\WINDOWS\system32
+0c58 ProxyThorn.exe              normal       C:\Documents and Settings\Administrator\桌面\花刺代理验证程序
+0320 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+076c chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+02d4 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+0508 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+0668 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+0d44 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+12d4 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+12dc chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+13e0 chrome.exe                  below normal C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+108c QQ.exe                      normal       C:\Program Files\Tencent\QQ\Bin
+10d4 TXPlatform.exe              normal       C:\Program Files\Tencent\QQIntl\Bin
+175c chrome.exe                  below normal C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+15a8 cidaemon.exe                idle         C:\WINDOWS\system32
+15e0 cidaemon.exe                idle         C:\WINDOWS\system32
+1620 cidaemon.exe                idle         C:\WINDOWS\system32
+1528 python.exe                  normal       C:\Python25
+0b10 QQ.exe                      normal       C:\Program Files\Tencent\QQ\Bin
+0600 rundll32.exe                normal       C:\WINDOWS\system32
+17c8 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+0288 Thunder.exe                 normal       C:\Program Files\Thunder Network\Thunder\Program
+107c thunderplatform.exe         normal       c:\program files\common files\thunder network\tp\ver1\1.1.2.58_1111
+17a0 GoogleCrashHandler.exe      normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Update\1.2.183.39
+1110 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+1458 chrome.exe                  below normal C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+171c chrome.exe                  below normal C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+1058 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+139c AcroRd32.exe                normal       C:\Program Files\Adobe\Reader 9.0\Reader
+09e0 uedit32.exe                 normal       C:\Program Files\IDM Computer Solutions\UltraEdit
+1708 Radmin.exe                  normal       E:\Tools\Radmin Viewer\Radmin Viewer
+14c4 渗透终极利器reDuh GUI(图).exe      normal       C:\Documents and Settings\Administrator\My Documents\Downloads\re0uhgsent\渗透终极利器reDuh GUI(图)
+1478 chrome.exe                  below normal C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+1134 notepad.exe                 normal       C:\WINDOWS\system32
+145c chrome.exe                  below normal C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+0270 inetinfo.exe                normal       C:\WINDOWS\system32\inetsrv
+06e0 svchost.exe                 normal       C:\WINDOWS\System32
+13bc w3wp.exe                    normal       c:\windows\system32\inetsrv
+14a8 AcroRd32Info.exe            normal       C:\Program Files\Adobe\Reader 9.0\Reader
+
+hardware:
++ DVD/CD-ROM 驱动器
+  - BS5036U PQH036T SCSI CdRom Device
+  - TSSTcorp CDDVDW TS-H652H
++ IDE ATA/ATAPI 控制器
+  - NVIDIA MCP61 Serial ATA Controller (driver 5.10.2600.692)
+  - 标准双通道 PCI IDE 控制器
+  - 次要 IDE 通道
+  - 主要 IDE 通道
++ NVIDIA Network Bus Enumerator
+  - NVIDIA Network Bus Enumerator (driver 73.1.0.0)
++ SCSI 和 RAID 控制器
+  - SCSI/RAID Host Controller
++ 处理器
+  - AMD Athlon(tm) 64 X2 Dual Core Processor 5200+ (driver 1.3.2.0)
+  - AMD Athlon(tm) 64 X2 Dual Core Processor 5200+ (driver 1.3.2.0)
++ 磁盘驱动器
+  - Kingston DT 101 II USB Device
+  - ST3500320AS
++ 端口 (COM 和 LPT)
+  - 打印机端口 (LPT1)
+  - 通信端口 (COM1)
++ 监视器
+  - 默认监视器
++ 计算机
+  - ACPI Multiprocessor PC
++ 键盘
+  - Standard 101/102-Key or Microsoft Natural PS/2 Keyboard
++ 声音、视频和游戏控制器
+  - Realtek High Definition Audio (driver 5.10.0.6151)
+  - 传统视频捕捉设备
+  - 传统音频驱动程序
+  - 媒体控制设备
+  - 视频编码解码器
+  - 音频编码解码器
++ 鼠标和其它指针设备
+  - PS/2 Compatible Mouse
++ 通用串行总线控制器
+  - Standard Enhanced PCI to USB Host Controller
+  - Standard OpenHCD USB Host Controller
+  - USB Composite Device
+  - USB Mass Storage Device
+  - USB Root Hub
+  - USB Root Hub
++ 图像处理设备
+  - USB 视频设备
++ 网络适配器
+  - NVIDIA nForce 10/100 Mbps Ethernet #2 (driver 73.1.0.0)
+  - Realtek RTL8188SU Wireless LAN 802.11n USB 2.0 Network Adapter (driver 1084.45.1125.2010)
+  - TeamViewer VPN Adapter (driver 2.10.0.0)
+  - VMware Virtual Ethernet Adapter for VMnet1 (driver 4.0.2.0)
+  - VMware Virtual Ethernet Adapter for VMnet8 (driver 4.0.2.0)
++ 系统设备
+  - ACPI Fixed Feature Button
+  - ACPI Power Button
+  - AMD Address Map Configuration
+  - AMD DRAM and HyperTransport(tm) Trace Mode Configuration
+  - AMD HyperTransport(tm) Configuration
+  - AMD Low Level Device Driver (driver 1.0.1.0)
+  - AMD Miscellaneous Configuration
+  - Direct memory access controller
+  - Extended IO Bus
+  - High Precision Event Timer (driver 7.0.0.1011)
+  - ISAPNP Read Data Port
+  - Logical Disk Manager
+  - Microcode Update Device
+  - Microsoft ACPI-Compliant System
+  - Microsoft System Management BIOS Driver
+  - Microsoft UAA Bus Driver for High Definition Audio
+  - Motherboard resources
+  - Motherboard resources
+  - Motherboard resources
+  - Numeric data processor
+  - NVIDIA nForce PCI System Management (driver 4.6.9.0)
+  - PCI bus
+  - PCI standard ISA bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard RAM Controller
+  - PCI standard RAM Controller
+  - Plug and Play Software Device Enumerator
+  - Printer Port Logical Interface
+  - Programmable interrupt controller
+  - System board
+  - System CMOS/real time clock
+  - System speaker
+  - System timer
+  - Volume Manager
+  - 控制台的全屏显示视频驱动程序
+  - 终端服务器键盘驱动程序
+  - 终端服务器设备重定向器
+  - 终端服务器鼠标驱动程序
++ 显示卡
+  - NVIDIA GeForce 6150SE nForce 430 (driver 6.14.12.5919)
+  - Radmin Mirror Driver V3 (driver 3.0.0.0)
+
+cpu registers:
+eax = 726f5065
+ebx = 726f5065
+ecx = 00ec1190
+edx = 00f11a38
+esi = 00ec1210
+edi = 0012f6fc
+eip = 004071df
+esp = 0012f478
+ebp = 0012f47c
+
+stack dump:
+0012f478  38 1a f1 00 b0 f4 12 00 - 7b 3a 41 00 65 50 6f 72  8.......{:A.ePor
+0012f488  d0 d2 e4 00 08 f5 12 00 - d7 43 49 00 a4 53 4f 00  .........CI..SO.
+0012f498  88 f4 12 00 00 00 00 00 - fc f6 12 00 00 00 00 00  ................
+0012f4a8  00 00 00 00 5c f5 12 00 - 5c f5 12 00 07 93 40 00  ....\...\.....@.
+0012f4b8  38 1a f1 00 fc f6 12 00 - 34 cb 44 00 c0 d7 e5 00  8.......4.D.....
+0012f4c8  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0012f4d8  00 00 00 00 00 00 00 00 - 90 11 ec 00 00 00 00 00  ................
+0012f4e8  00 00 00 00 00 00 00 00 - 90 11 ec 00 00 00 00 00  ................
+0012f4f8  60 00 50 00 a4 fe 12 00 - 10 12 ec 00 e9 b8 e2 77  `.P............w
+0012f508  a0 f8 12 00 d7 43 49 00 - 10 3f 4f 00 bc f4 12 00  .....CI..?O.....
+0012f518  00 00 00 00 be b8 e2 77 - 14 f5 12 00 00 00 00 00  .......w........
+0012f528  5c f6 12 00 18 af e3 77 - f8 b8 e2 77 ff ff ff ff  \......w...w....
+0012f538  f2 b8 e2 77 00 ff ec 00 - fe 0a 09 00 00 00 00 00  ...w............
+0012f548  40 f6 12 00 00 00 00 00 - 0f 00 00 00 00 00 00 00  @...............
+0012f558  00 00 00 00 a0 f6 12 00 - 61 b6 47 00 c0 d7 e5 00  ........a.G.....
+0012f568  57 cb 44 00 fc f6 12 00 - c5 d5 44 00 c0 d7 e5 00  W.D.......D.....
+0012f578  f5 b0 47 00 fc f6 12 00 - d0 f8 12 00 c0 d7 e5 00  ..G.............
+0012f588  fe 0a 09 00 fc ff ff ff - 00 00 00 00 8c f6 12 00  ................
+0012f598  87 a3 cf 77 87 a3 cf 77 - 00 00 00 00 40 f6 12 00  ...w...w....@...
+0012f5a8  d6 f5 b0 74 40 f6 12 00 - 01 00 00 00 00 00 00 00  ...t@...........
+
+disassembling:
+004071d8     public nsServer.cpp.nsServer.Stop:  ; function entry point
+004071d8 125           ebp
+004071d9               ebp, esp
+004071db               ebx
+004071dc               ebx, [ebp+8]
+004071df 127 >         dword ptr [ebx+$14], 1
+004071e6 128           eax, [ebx+$10]
+004071e9               eax
+004071ea               +$e98eb ($4f0ada)      ; closesocket (WS2_32.dll)
+004071ef 129           dword ptr [ebx+$10], $ffffffff
+004071f6 130           $ffffffff
+[...]
+
+date/time         : 2011-06-12, 16:30:34, 812ms
+computer name     : REDICE
+user name         : Administrator <admin>
+registered owner  : redice / taoyard.com
+operating system  : Windows 2003 Service Pack 2 build 3790
+system language   : Chinese
+system up time    : 2 hours 55 minutes
+program up time   : 16 minutes 24 seconds
+processors        : 2x AMD Athlon(tm) 64 X2 Dual Core Processor 5200+
+physical memory   : 217/1983 MB (free/total)
+free disk space   : (C:) 2.74 GB
+display mode      : 1920x1080, 32 bit
+process id        : $14c4
+allocated memory  : 16.14 MB
+executable        : 渗透终极利器reDuh GUI(图).exe
+exec. date/time   : 2009-07-28 21:52
+compiled with     : BCB 2009
+madExcept version : 3.0i beta 2
+callstack crc     : $1a452fb4, $ac0893a1, $152fd69e
+exception number  : 2
+exception class   : EAccessViolation
+exception message : Access violation at address 004071DF in module '渗透终极利器reDuh GUI(图).exe'. Write of address 776F4470.
+
+main thread ($824):
+004071df +007 渗透终极利器reDuh GUI(图).exe nsServer.cpp     127 +2 nsServer.Stop
+00413a76 +022 渗透终极利器reDuh GUI(图).exe tunnelThread.cpp 202 +5 TTunnelThread.Stop
+00409302 +142 渗透终极利器reDuh GUI(图).exe reDuchMain.cpp   261 +8 TForm1.clstnlBtnClick
+0047b65b +06f 渗透终极利器reDuh GUI(图).exe Controls                TControl.Click
+0044cb52 +01e 渗透终极利器reDuh GUI(图).exe Stdctrls                TCustomButton.Click
+0044d5c0 +010 渗透终极利器reDuh GUI(图).exe Stdctrls                TCustomButton.CNCommand
+0047b0f2 +2d2 渗透终极利器reDuh GUI(图).exe Controls                TControl.WndProc
+0047f5f7 +513 渗透终极利器reDuh GUI(图).exe Controls                TWinControl.WndProc
+0044c818 +06c 渗透终极利器reDuh GUI(图).exe Stdctrls                TButtonControl.WndProc
+0047ad18 +024 渗透终极利器reDuh GUI(图).exe Controls                TControl.Perform
+0047f747 +023 渗透终极利器reDuh GUI(图).exe Controls                _16950
+00480143 +00b 渗透终极利器reDuh GUI(图).exe Controls                TWinControl.WMCommand
+0047b0f2 +2d2 渗透终极利器reDuh GUI(图).exe Controls                TControl.WndProc
+0047f5f7 +513 渗透终极利器reDuh GUI(图).exe Controls                TWinControl.WndProc
+0047ed10 +02c 渗透终极利器reDuh GUI(图).exe Controls                TWinControl.MainWndProc
+00424658 +014 渗透终极利器reDuh GUI(图).exe Classes                 _17453
+77e2c332 +044 USER32.dll                                            SendMessageW
+77e2bf6f +016 USER32.dll                                            CallWindowProcW
+0047f6f3 +0d7 渗透终极利器reDuh GUI(图).exe Controls                TWinControl.DefaultHandler
+0047ba78 +010 渗透终极利器reDuh GUI(图).exe Controls                TControl.WMLButtonUp
+0047b0f2 +2d2 渗透终极利器reDuh GUI(图).exe Controls                TControl.WndProc
+0047f5f7 +513 渗透终极利器reDuh GUI(图).exe Controls                TWinControl.WndProc
+0044c818 +06c 渗透终极利器reDuh GUI(图).exe Stdctrls                TButtonControl.WndProc
+0047ed10 +02c 渗透终极利器reDuh GUI(图).exe Controls                TWinControl.MainWndProc
+00424658 +014 渗透终极利器reDuh GUI(图).exe Classes                 _17453
+77e2bacb +00a USER32.dll                                            DispatchMessageW
+0046e74d +11d 渗透终极利器reDuh GUI(图).exe Forms                   TApplication.ProcessMessage
+0046e77a +00a 渗透终极利器reDuh GUI(图).exe Forms                   TApplication.HandleMessage
+0046eaa5 +0c9 渗透终极利器reDuh GUI(图).exe Forms                   TApplication.Run
+0040734a +052 渗透终极利器reDuh GUI(图).exe reDuhGUI.cpp      21 +7 WinMain
+0049e866 +156 渗透终极利器reDuh GUI(图).exe                         __startup
+
+thread $1494: <priority:1>
+7c9577f7 +0a ntdll.dll                               NtRemoveIoCompletion
+004c751d +0d 渗透终极利器reDuh GUI(图).exe Madexcept _17200
+004c7587 +37 渗透终极利器reDuh GUI(图).exe Madexcept _17201
+>> created by main thread ($824) at:
+71a85da2 +00 mswsock.dll
+
+thread $13cc (ThttpDataQueueManager):
+7c956f67 +00a ntdll.dll                                                     NtDelayExecution
+7c801ed3 +047 kernel32.dll                                                  SleepEx
+7c8024f8 +00a kernel32.dll                                                  Sleep
+00406cd1 +8cd 渗透终极利器reDuh GUI(图).exe httpDataQueueManager.cpp 67 +36 ThttpDataQueueManager.Execute
+004c763b +02b 渗透终极利器reDuh GUI(图).exe Madexcept                       _17202
+00422f06 +042 渗透终极利器reDuh GUI(图).exe Classes                         _17295
+0043d2d4 +028 渗透终极利器reDuh GUI(图).exe System                          _16870
+004c751d +00d 渗透终极利器reDuh GUI(图).exe Madexcept                       _17200
+004c7587 +037 渗透终极利器reDuh GUI(图).exe Madexcept                       _17201
+>> created by main thread ($824) at:
+004063b2 +032 渗透终极利器reDuh GUI(图).exe httpDataQueueManager.cpp 26  +1 ThttpDataQueueManager.Create
+
+thread $1118 (TpopDataFromRemoteJSP):
+7c956f67 +000a ntdll.dll                                                       NtDelayExecution
+7c801ed3 +0047 kernel32.dll                                                    SleepEx
+7c8024f8 +000a kernel32.dll                                                    Sleep
+00403cea +1bba 渗透终极利器reDuh GUI(图).exe popDataFromRemoteJSP.cpp 168 +115 TpopDataFromRemoteJSP.Execute
+004c763b +002b 渗透终极利器reDuh GUI(图).exe Madexcept                         _17202
+00422f06 +0042 渗透终极利器reDuh GUI(图).exe Classes                           _17295
+0043d2d4 +0028 渗透终极利器reDuh GUI(图).exe System                            _16870
+004c751d +000d 渗透终极利器reDuh GUI(图).exe Madexcept                         _17200
+004c7587 +0037 渗透终极利器reDuh GUI(图).exe Madexcept                         _17201
+>> created by main thread ($824) at:
+0040209e +0032 渗透终极利器reDuh GUI(图).exe popDataFromRemoteJSP.cpp  32   +1 TpopDataFromRemoteJSP.Create
+
+thread $394:
+7c957777 +000a ntdll.dll                               NtRaiseHardError
+7c8426c2 +bdc5 kernel32.dll                            UnhandledExceptionFilter
+0043cdf3 +001f 渗透终极利器reDuh GUI(图).exe System    _16840
+7c958579 +0009 ntdll.dll                               KiUserExceptionDispatcher
+00422f47 +0083 渗透终极利器reDuh GUI(图).exe Classes   _17295
+0043d2d4 +0028 渗透终极利器reDuh GUI(图).exe System    _16870
+004c751d +000d 渗透终极利器reDuh GUI(图).exe Madexcept _17200
+004c7587 +0037 渗透终极利器reDuh GUI(图).exe Madexcept _17201
+
+thread $12ec:
+7c957d27 +0a ntdll.dll                                          NtWaitForSingleObject
+71b71021 +82 WS2_32.dll                                         WSAAccept
+71b712bd +12 WS2_32.dll                                         accept
+00406ed1 +95 渗透终极利器reDuh GUI(图).exe nsServer.cpp     149 ThttpDataQueueManager.Destroy
+004c751d +0d 渗透终极利器reDuh GUI(图).exe Madexcept            _17200
+004c7587 +37 渗透终极利器reDuh GUI(图).exe Madexcept            _17201
+>> created by thread $394 at:
+00407195 +1d 渗透终极利器reDuh GUI(图).exe nsServer.cpp 114  +3 nsServer.Start
+
+modules:
+00390000 SSLEAY32.dll           0.9.8.8         C:\Documents and Settings\Administrator\My Documents\Downloads\re0uhgsent\渗透终极利器reDuh GUI(图)
+00400000 渗透终极利器reDuh GUI(图).exe                 C:\Documents and Settings\Administrator\My Documents\Downloads\re0uhgsent\渗透终极利器reDuh GUI(图)
+00550000 LIBEAY32.dll           0.9.8.8         C:\Documents and Settings\Administrator\My Documents\Downloads\re0uhgsent\渗透终极利器reDuh GUI(图)
+10000000 LIBCURL.DLL            7.19.5.0        C:\Documents and Settings\Administrator\My Documents\Downloads\re0uhgsent\渗透终极利器reDuh GUI(图)
+4c510000 msctfime.ime           5.2.3790.3959   C:\WINDOWS\system32
+69660000 hnetcfg.dll            5.2.3790.3959   C:\WINDOWS\system32
+71a40000 wshtcpip.dll           5.2.3790.3959   C:\WINDOWS\System32
+71a80000 mswsock.dll            5.2.3790.4318   C:\WINDOWS\system32
+71ad0000 uxtheme.dll            6.0.3790.3959   C:\WINDOWS\system32
+71b10000 WSOCK32.DLL            5.2.3790.0      C:\WINDOWS\system32
+71b50000 WS2HELP.dll            5.2.3790.3959   C:\WINDOWS\system32
+71b60000 WS2_32.dll             5.2.3790.3959   C:\WINDOWS\system32
+74ae0000 USP10.dll              1.422.3790.3959 C:\WINDOWS\system32
+75d60000 apphelp.dll            5.2.3790.3959   C:\WINDOWS\system32
+76080000 MSASN1.dll             5.2.3790.3959   C:\WINDOWS\system32
+760a0000 CRYPT32.dll            5.131.3790.3959 C:\WINDOWS\system32
+76170000 MSIMG32.DLL            5.2.3790.0      C:\WINDOWS\system32
+76180000 IMM32.DLL              5.2.3790.3959   C:\WINDOWS\system32
+761a0000 COMDLG32.DLL           6.0.3790.3959   C:\WINDOWS\system32
+76ab0000 psapi.dll              5.2.3790.3959   C:\WINDOWS\system32
+76b10000 WINTRUST.dll           5.131.3790.3959 C:\WINDOWS\system32
+76b70000 imagehlp.dll           5.2.3790.3959   C:\WINDOWS\system32
+76eb0000 Secur32.dll            5.2.3790.4455   C:\WINDOWS\system32
+774b0000 OLE32.DLL              5.2.3790.3959   C:\WINDOWS\system32
+775f0000 OLEAUT32.DLL           5.2.3790.4202   C:\WINDOWS\system32
+77b60000 VERSION.DLL            5.2.3790.3959   C:\WINDOWS\system32
+77b70000 msvcrt.dll             7.0.3790.3959   C:\WINDOWS\system32
+77bd0000 GDI32.dll              5.2.3790.4396   C:\WINDOWS\system32
+77c20000 RPCRT4.dll             5.2.3790.4502   C:\WINDOWS\system32
+77cd0000 COMCTL32.DLL           6.0.3790.3959   C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.3790.3959_x-ww_D8713E55
+77e10000 USER32.dll             5.2.3790.4033   C:\WINDOWS\system32
+77eb0000 SHLWAPI.dll            6.0.3790.3959   C:\WINDOWS\system32
+77f30000 ADVAPI32.DLL           5.2.3790.4455   C:\WINDOWS\system32
+78520000 MSVCR90.dll            9.0.30729.4148  C:\WINDOWS\WinSxS\x86_Microsoft.VC90.CRT_1fc8b3b9a1e18e3b_9.0.30729.4148_x-ww_D495AC4E
+7c800000 kernel32.dll           5.2.3790.4480   C:\WINDOWS\system32
+7c930000 ntdll.dll              5.2.3790.4455   C:\WINDOWS\system32
+7ca10000 SHELL32.dll            6.0.3790.4315   C:\WINDOWS\system32
+7f000000 LPK.DLL                5.2.3790.3959   C:\WINDOWS\system32
+
+processes:
+0000 Idle
+0004 System                      normal
+0190 smss.exe                    normal       C:\WINDOWS\system32
+01c0 csrss.exe
+01d8 winlogon.exe                high         C:\WINDOWS\system32
+0208 services.exe                normal       C:\WINDOWS\system32
+0214 lsass.exe                   normal       C:\WINDOWS\system32
+02bc nvsvc32.exe                 normal       C:\WINDOWS\system32
+02f4 svchost.exe                 normal       C:\WINDOWS\system32
+0324 svchost.exe
+0374 svchost.exe
+0398 svchost.exe
+03c4 svchost.exe                 normal       C:\WINDOWS\System32
+0448 spoolsv.exe                 normal       C:\WINDOWS\system32
+04a8 WVSScheduler.exe            normal       C:\Program Files\Acunetix\Web Vulnerability Scanner 6
+04dc cisvc.exe                   normal       C:\WINDOWS\system32
+04f0 DCService.exe               normal       C:\Documents and Settings\All Users\Application Data\DatacardService
+052c ftpservice.exe              normal       C:\Program Files\Sonic FTP Server
+05b0 jqs.exe                     idle         C:\Program Files\Java\jre6\bin
+05e4 mdm.exe                     normal       C:\Program Files\Common Files\Microsoft Shared\VS7Debug
+0620 sqlservr.exe                normal       C:\PROGRA~1\MICROS~4\MSSQL\binn
+0690 mysqld.exe                  normal       C:\Program Files\MySQL\MySQL Server 5.1\bin
+079c PhDdnsCore.exe              normal       C:\Program Files\Oray\PhDDNS
+07bc rserver3.exe                normal       C:\Program Files\Radmin Server
+0818 sntlkeyssrvr.exe            normal       C:\Program Files\Common Files\SafeNet Sentinel\Sentinel Keys Server
+0830 spnsrvnt.exe                normal       C:\Program Files\Common Files\SafeNet Sentinel\Sentinel Protection Server\WinNT
+0880 sntlsrtsrvr.exe             normal       C:\Program Files\Common Files\SafeNet Sentinel\Sentinel Security Runtime
+08a0 Serv-U.exe                  normal       C:\Program Files\RhinoSoft.com\Serv-U
+08f4 sqlbrowser.exe
+0910 sqlwriter.exe               normal       C:\Program Files\Microsoft SQL Server\90\Shared
+092c svchost.exe
+0980 svchost.exe                 normal       C:\WINDOWS\System32
+09cc vmnat.exe                   normal       C:\WINDOWS\system32
+0a14 EMSVR.EXE                   normal       C:\WINWEB~1
+0a2c svchost.exe                 normal       C:\WINDOWS\system32
+0a40 mssearch.exe                normal       C:\Program Files\Common Files\System\MSSearch\Bin
+0aa8 vmware-authd.exe            normal       C:\Program Files\VMware\VMware Workstation
+0b04 vmnetdhcp.exe               normal       C:\WINDOWS\system32
+0df4 Explorer.EXE                normal       C:\WINDOWS
+0e5c FamItrfc.Exe                high         C:\Program Files\Radmin Server
+01a8 TortoiseHgOverlayServer.exe normal       C:\Program Files\TortoiseHg
+01bc Everything-1.2.1.371.exe    normal       C:\Program Files\Everything-1.2.1.371
+01f0 googletalk.exe              normal       C:\Program Files\Google\Google Talk
+0358 issch.exe                   normal       C:\Program Files\Common Files\InstallShield\UpdateService
+0380 jusched.exe                 normal       C:\Program Files\Common Files\Java\Java Update
+03cc Skype.exe                   normal       c:\program files\skype\Phone
+05f0 YodaoDict.exe               normal       C:\Program Files\Youdao\Dict
+0520 everbox.exe                 normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\EverBox
+068c TSVNCache.exe               normal       C:\Program Files\TortoiseSVN\bin
+0b84 wmiprvse.exe
+0d54 skypePM.exe                 normal       C:\program files\skype\Plugin Manager
+05cc wing.exe                    normal       C:\Program Files\Wing IDE 3.2\bin
+0484 conime.exe                  normal       C:\WINDOWS\system32
+0c58 ProxyThorn.exe              normal       C:\Documents and Settings\Administrator\桌面\花刺代理验证程序
+0320 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+076c chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+02d4 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+0508 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+0668 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+0d44 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+12d4 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+12dc chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+13e0 chrome.exe                  below normal C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+108c QQ.exe                      normal       C:\Program Files\Tencent\QQ\Bin
+10d4 TXPlatform.exe              normal       C:\Program Files\Tencent\QQIntl\Bin
+175c chrome.exe                  below normal C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+15a8 cidaemon.exe                idle         C:\WINDOWS\system32
+15e0 cidaemon.exe                idle         C:\WINDOWS\system32
+1620 cidaemon.exe                idle         C:\WINDOWS\system32
+1528 python.exe                  normal       C:\Python25
+0b10 QQ.exe                      normal       C:\Program Files\Tencent\QQ\Bin
+0600 rundll32.exe                normal       C:\WINDOWS\system32
+17c8 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+0288 Thunder.exe                 normal       C:\Program Files\Thunder Network\Thunder\Program
+107c thunderplatform.exe         normal       c:\program files\common files\thunder network\tp\ver1\1.1.2.58_1111
+17a0 GoogleCrashHandler.exe      normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Update\1.2.183.39
+1110 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+1458 chrome.exe                  below normal C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+171c chrome.exe                  below normal C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+1058 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+139c AcroRd32.exe                normal       C:\Program Files\Adobe\Reader 9.0\Reader
+09e0 uedit32.exe                 normal       C:\Program Files\IDM Computer Solutions\UltraEdit
+1708 Radmin.exe                  normal       E:\Tools\Radmin Viewer\Radmin Viewer
+14c4 渗透终极利器reDuh GUI(图).exe      normal       C:\Documents and Settings\Administrator\My Documents\Downloads\re0uhgsent\渗透终极利器reDuh GUI(图)
+1478 chrome.exe                  below normal C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+1134 notepad.exe                 normal       C:\WINDOWS\system32
+145c chrome.exe                  below normal C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+0270 inetinfo.exe                normal       C:\WINDOWS\system32\inetsrv
+06e0 svchost.exe                 normal       C:\WINDOWS\System32
+13bc w3wp.exe                    normal       c:\windows\system32\inetsrv
+14a8 AcroRd32Info.exe            normal       C:\Program Files\Adobe\Reader 9.0\Reader
+
+hardware:
++ DVD/CD-ROM 驱动器
+  - BS5036U PQH036T SCSI CdRom Device
+  - TSSTcorp CDDVDW TS-H652H
++ IDE ATA/ATAPI 控制器
+  - NVIDIA MCP61 Serial ATA Controller (driver 5.10.2600.692)
+  - 标准双通道 PCI IDE 控制器
+  - 次要 IDE 通道
+  - 主要 IDE 通道
++ NVIDIA Network Bus Enumerator
+  - NVIDIA Network Bus Enumerator (driver 73.1.0.0)
++ SCSI 和 RAID 控制器
+  - SCSI/RAID Host Controller
++ 处理器
+  - AMD Athlon(tm) 64 X2 Dual Core Processor 5200+ (driver 1.3.2.0)
+  - AMD Athlon(tm) 64 X2 Dual Core Processor 5200+ (driver 1.3.2.0)
++ 磁盘驱动器
+  - Kingston DT 101 II USB Device
+  - ST3500320AS
++ 端口 (COM 和 LPT)
+  - 打印机端口 (LPT1)
+  - 通信端口 (COM1)
++ 监视器
+  - 默认监视器
++ 计算机
+  - ACPI Multiprocessor PC
++ 键盘
+  - Standard 101/102-Key or Microsoft Natural PS/2 Keyboard
++ 声音、视频和游戏控制器
+  - Realtek High Definition Audio (driver 5.10.0.6151)
+  - 传统视频捕捉设备
+  - 传统音频驱动程序
+  - 媒体控制设备
+  - 视频编码解码器
+  - 音频编码解码器
++ 鼠标和其它指针设备
+  - PS/2 Compatible Mouse
++ 通用串行总线控制器
+  - Standard Enhanced PCI to USB Host Controller
+  - Standard OpenHCD USB Host Controller
+  - USB Composite Device
+  - USB Mass Storage Device
+  - USB Root Hub
+  - USB Root Hub
++ 图像处理设备
+  - USB 视频设备
++ 网络适配器
+  - NVIDIA nForce 10/100 Mbps Ethernet #2 (driver 73.1.0.0)
+  - Realtek RTL8188SU Wireless LAN 802.11n USB 2.0 Network Adapter (driver 1084.45.1125.2010)
+  - TeamViewer VPN Adapter (driver 2.10.0.0)
+  - VMware Virtual Ethernet Adapter for VMnet1 (driver 4.0.2.0)
+  - VMware Virtual Ethernet Adapter for VMnet8 (driver 4.0.2.0)
++ 系统设备
+  - ACPI Fixed Feature Button
+  - ACPI Power Button
+  - AMD Address Map Configuration
+  - AMD DRAM and HyperTransport(tm) Trace Mode Configuration
+  - AMD HyperTransport(tm) Configuration
+  - AMD Low Level Device Driver (driver 1.0.1.0)
+  - AMD Miscellaneous Configuration
+  - Direct memory access controller
+  - Extended IO Bus
+  - High Precision Event Timer (driver 7.0.0.1011)
+  - ISAPNP Read Data Port
+  - Logical Disk Manager
+  - Microcode Update Device
+  - Microsoft ACPI-Compliant System
+  - Microsoft System Management BIOS Driver
+  - Microsoft UAA Bus Driver for High Definition Audio
+  - Motherboard resources
+  - Motherboard resources
+  - Motherboard resources
+  - Numeric data processor
+  - NVIDIA nForce PCI System Management (driver 4.6.9.0)
+  - PCI bus
+  - PCI standard ISA bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard RAM Controller
+  - PCI standard RAM Controller
+  - Plug and Play Software Device Enumerator
+  - Printer Port Logical Interface
+  - Programmable interrupt controller
+  - System board
+  - System CMOS/real time clock
+  - System speaker
+  - System timer
+  - Volume Manager
+  - 控制台的全屏显示视频驱动程序
+  - 终端服务器键盘驱动程序
+  - 终端服务器设备重定向器
+  - 终端服务器鼠标驱动程序
++ 显示卡
+  - NVIDIA GeForce 6150SE nForce 430 (driver 6.14.12.5919)
+  - Radmin Mirror Driver V3 (driver 3.0.0.0)
+
+cpu registers:
+eax = 776f445c
+ebx = 776f445c
+ecx = 00ec1190
+edx = 00f11a38
+esi = 00ec1210
+edi = 0012f6fc
+eip = 004071df
+esp = 0012f478
+ebp = 0012f47c
+
+stack dump:
+0012f478  38 1a f1 00 b0 f4 12 00 - 7b 3a 41 00 5c 44 6f 77  8.......{:A.\Dow
+0012f488  d0 d2 e4 00 08 f5 12 00 - d7 43 49 00 a4 53 4f 00  .........CI..SO.
+0012f498  88 f4 12 00 00 00 00 00 - fc f6 12 00 00 00 00 00  ................
+0012f4a8  00 00 00 00 5c f5 12 00 - 5c f5 12 00 07 93 40 00  ....\...\.....@.
+0012f4b8  38 1a f1 00 fc f6 12 00 - 34 cb 44 00 c0 d7 e5 00  8.......4.D.....
+0012f4c8  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0012f4d8  00 00 00 00 00 00 00 00 - 90 11 ec 00 00 00 00 00  ................
+0012f4e8  00 00 00 00 00 00 00 00 - 90 11 ec 00 00 00 00 00  ................
+0012f4f8  60 00 50 00 a4 fe 12 00 - 10 12 ec 00 e9 b8 e2 77  `.P............w
+0012f508  a0 f8 12 00 d7 43 49 00 - 10 3f 4f 00 bc f4 12 00  .....CI..?O.....
+0012f518  00 00 00 00 be b8 e2 77 - 14 f5 12 00 00 00 00 00  .......w........
+0012f528  5c f6 12 00 18 af e3 77 - f8 b8 e2 77 ff ff ff ff  \......w...w....
+0012f538  f2 b8 e2 77 00 de df 00 - fe 0a 09 00 00 00 00 00  ...w............
+0012f548  40 f6 12 00 00 00 00 00 - 0f 00 00 00 00 00 00 00  @...............
+0012f558  00 00 00 00 a0 f6 12 00 - 61 b6 47 00 c0 d7 e5 00  ........a.G.....
+0012f568  57 cb 44 00 fc f6 12 00 - c5 d5 44 00 c0 d7 e5 00  W.D.......D.....
+0012f578  f5 b0 47 00 fc f6 12 00 - d0 f8 12 00 c0 d7 e5 00  ..G.............
+0012f588  fe 0a 09 00 fc ff ff ff - 00 00 00 00 8c f6 12 00  ................
+0012f598  87 a3 cf 77 87 a3 cf 77 - 00 00 00 00 40 f6 12 00  ...w...w....@...
+0012f5a8  d6 f5 b0 74 40 f6 12 00 - 01 00 00 00 00 00 00 00  ...t@...........
+
+disassembling:
+004071d8     public nsServer.cpp.nsServer.Stop:  ; function entry point
+004071d8 125           ebp
+004071d9               ebp, esp
+004071db               ebx
+004071dc               ebx, [ebp+8]
+004071df 127 >         dword ptr [ebx+$14], 1
+004071e6 128           eax, [ebx+$10]
+004071e9               eax
+004071ea               +$e98eb ($4f0ada)      ; closesocket (WS2_32.dll)
+004071ef 129           dword ptr [ebx+$10], $ffffffff
+004071f6 130           $ffffffff
+[...]
+
+date/time         : 2011-06-12, 16:34:29, 187ms
+computer name     : REDICE
+user name         : Administrator <admin>
+registered owner  : redice / taoyard.com
+operating system  : Windows 2003 Service Pack 2 build 3790
+system language   : Chinese
+system up time    : 2 hours 59 minutes
+program up time   : 1 minute 16 seconds
+processors        : 2x AMD Athlon(tm) 64 X2 Dual Core Processor 5200+
+physical memory   : 305/1983 MB (free/total)
+free disk space   : (C:) 2.74 GB
+display mode      : 1920x1080, 32 bit
+process id        : $aec
+allocated memory  : 14.48 MB
+executable        : 渗透终极利器reDuh GUI(图).exe
+exec. date/time   : 2009-07-28 21:52
+compiled with     : BCB 2009
+madExcept version : 3.0i beta 2
+callstack crc     : $1a452fb4, $0bf91147, $589270bd
+exception number  : 1
+exception class   : EAccessViolation
+exception message : Access violation at address 004071DF in module '渗透终极利器reDuh GUI(图).exe'. Write of address C6BFC80E.
+
+main thread ($1370):
+004071df +007 渗透终极利器reDuh GUI(图).exe nsServer.cpp     127  +2 nsServer.Stop
+00413a76 +022 渗透终极利器reDuh GUI(图).exe tunnelThread.cpp 202  +5 TTunnelThread.Stop
+00408efc +2d8 渗透终极利器reDuh GUI(图).exe reDuchMain.cpp   241 +38 TForm1.killBtnClick
+0047b65b +06f 渗透终极利器reDuh GUI(图).exe Controls                 TControl.Click
+0044cb52 +01e 渗透终极利器reDuh GUI(图).exe Stdctrls                 TCustomButton.Click
+0044d5c0 +010 渗透终极利器reDuh GUI(图).exe Stdctrls                 TCustomButton.CNCommand
+0047b0f2 +2d2 渗透终极利器reDuh GUI(图).exe Controls                 TControl.WndProc
+0047f5f7 +513 渗透终极利器reDuh GUI(图).exe Controls                 TWinControl.WndProc
+0044c818 +06c 渗透终极利器reDuh GUI(图).exe Stdctrls                 TButtonControl.WndProc
+0047ad18 +024 渗透终极利器reDuh GUI(图).exe Controls                 TControl.Perform
+0047f747 +023 渗透终极利器reDuh GUI(图).exe Controls                 _16950
+00480143 +00b 渗透终极利器reDuh GUI(图).exe Controls                 TWinControl.WMCommand
+004691dc +02c 渗透终极利器reDuh GUI(图).exe Forms                    TCustomForm.WMCommand
+0040e74a +012 渗透终极利器reDuh GUI(图).exe reDuchMain.h      50  +2 TForm1.Dispatch
+0047b0f2 +2d2 渗透终极利器reDuh GUI(图).exe Controls                 TControl.WndProc
+0047f5f7 +513 渗透终极利器reDuh GUI(图).exe Controls                 TWinControl.WndProc
+0046614c +594 渗透终极利器reDuh GUI(图).exe Forms                    TCustomForm.WndProc
+0047ed10 +02c 渗透终极利器reDuh GUI(图).exe Controls                 TWinControl.MainWndProc
+00424658 +014 渗透终极利器reDuh GUI(图).exe Classes                  _17453
+77e2c332 +044 USER32.dll                                             SendMessageW
+77e2bf6f +016 USER32.dll                                             CallWindowProcW
+0047f6f3 +0d7 渗透终极利器reDuh GUI(图).exe Controls                 TWinControl.DefaultHandler
+0047ba78 +010 渗透终极利器reDuh GUI(图).exe Controls                 TControl.WMLButtonUp
+0047b9ee +06e 渗透终极利器reDuh GUI(图).exe Controls                 TControl.WMMouseMove
+0047b0f2 +2d2 渗透终极利器reDuh GUI(图).exe Controls                 TControl.WndProc
+0047f5f7 +513 渗透终极利器reDuh GUI(图).exe Controls                 TWinControl.WndProc
+0044c818 +06c 渗透终极利器reDuh GUI(图).exe Stdctrls                 TButtonControl.WndProc
+0047ed10 +02c 渗透终极利器reDuh GUI(图).exe Controls                 TWinControl.MainWndProc
+00424658 +014 渗透终极利器reDuh GUI(图).exe Classes                  _17453
+77e2bacb +00a USER32.dll                                             DispatchMessageW
+0046e74d +11d 渗透终极利器reDuh GUI(图).exe Forms                    TApplication.ProcessMessage
+0046e77a +00a 渗透终极利器reDuh GUI(图).exe Forms                    TApplication.HandleMessage
+0046eaa5 +0c9 渗透终极利器reDuh GUI(图).exe Forms                    TApplication.Run
+0040734a +052 渗透终极利器reDuh GUI(图).exe reDuhGUI.cpp      21  +7 WinMain
+0049e866 +156 渗透终极利器reDuh GUI(图).exe                          __startup
+
+thread $e54:
+7c957d17 +a ntdll.dll  NtWaitForMultipleObjects
+
+thread $1168: <priority:1>
+7c9577f7 +0a ntdll.dll                               NtRemoveIoCompletion
+004c751d +0d 渗透终极利器reDuh GUI(图).exe Madexcept _17200
+004c7587 +37 渗透终极利器reDuh GUI(图).exe Madexcept _17201
+>> created by main thread ($1370) at:
+71a85da2 +00 mswsock.dll
+
+thread $1448 (TTunnelThread):
+7c956f67 +0a ntdll.dll                                              NtDelayExecution
+7c801ed3 +47 kernel32.dll                                           SleepEx
+7c8024f8 +0a kernel32.dll                                           Sleep
+00413a22 +9a 渗透终极利器reDuh GUI(图).exe tunnelThread.cpp 182 +14 TTunnelThread.Execute
+004c763b +2b 渗透终极利器reDuh GUI(图).exe Madexcept                _17202
+00422f06 +42 渗透终极利器reDuh GUI(图).exe Classes                  _17295
+0043d2d4 +28 渗透终极利器reDuh GUI(图).exe System                   _16870
+004c751d +0d 渗透终极利器reDuh GUI(图).exe Madexcept                _17200
+004c7587 +37 渗透终极利器reDuh GUI(图).exe Madexcept                _17201
+>> created by main thread ($1370) at:
+004135d6 +46 渗透终极利器reDuh GUI(图).exe tunnelThread.cpp 159  +1 TTunnelThread.Create
+
+thread $17d8:
+7c957d27 +0a ntdll.dll                                          NtWaitForSingleObject
+71b71021 +82 WS2_32.dll                                         WSAAccept
+71b712bd +12 WS2_32.dll                                         accept
+00406ed1 +95 渗透终极利器reDuh GUI(图).exe nsServer.cpp     149 ThttpDataQueueManager.Destroy
+004c751d +0d 渗透终极利器reDuh GUI(图).exe Madexcept            _17200
+004c7587 +37 渗透终极利器reDuh GUI(图).exe Madexcept            _17201
+>> created by thread $1448 (TTunnelThread) at:
+00407195 +1d 渗透终极利器reDuh GUI(图).exe nsServer.cpp 114  +3 nsServer.Start
+
+modules:
+00390000 SSLEAY32.dll           0.9.8.8         C:\Documents and Settings\Administrator\My Documents\Downloads\re0uhgsent\渗透终极利器reDuh GUI(图)
+00400000 渗透终极利器reDuh GUI(图).exe                 C:\Documents and Settings\Administrator\My Documents\Downloads\re0uhgsent\渗透终极利器reDuh GUI(图)
+00550000 LIBEAY32.dll           0.9.8.8         C:\Documents and Settings\Administrator\My Documents\Downloads\re0uhgsent\渗透终极利器reDuh GUI(图)
+10000000 LIBCURL.DLL            7.19.5.0        C:\Documents and Settings\Administrator\My Documents\Downloads\re0uhgsent\渗透终极利器reDuh GUI(图)
+4c510000 msctfime.ime           5.2.3790.3959   C:\WINDOWS\system32
+69660000 hnetcfg.dll            5.2.3790.3959   C:\WINDOWS\system32
+71a40000 wshtcpip.dll           5.2.3790.3959   C:\WINDOWS\System32
+71a80000 mswsock.dll            5.2.3790.4318   C:\WINDOWS\system32
+71ad0000 uxtheme.dll            6.0.3790.3959   C:\WINDOWS\system32
+71b10000 WSOCK32.DLL            5.2.3790.0      C:\WINDOWS\system32
+71b50000 WS2HELP.dll            5.2.3790.3959   C:\WINDOWS\system32
+71b60000 WS2_32.dll             5.2.3790.3959   C:\WINDOWS\system32
+74ae0000 USP10.dll              1.422.3790.3959 C:\WINDOWS\system32
+75d60000 apphelp.dll            5.2.3790.3959   C:\WINDOWS\system32
+76170000 MSIMG32.DLL            5.2.3790.0      C:\WINDOWS\system32
+76180000 IMM32.DLL              5.2.3790.3959   C:\WINDOWS\system32
+761a0000 COMDLG32.DLL           6.0.3790.3959   C:\WINDOWS\system32
+76eb0000 Secur32.dll            5.2.3790.4455   C:\WINDOWS\system32
+774b0000 OLE32.DLL              5.2.3790.3959   C:\WINDOWS\system32
+775f0000 OLEAUT32.DLL           5.2.3790.4202   C:\WINDOWS\system32
+77b60000 VERSION.DLL            5.2.3790.3959   C:\WINDOWS\system32
+77b70000 msvcrt.dll             7.0.3790.3959   C:\WINDOWS\system32
+77bd0000 GDI32.dll              5.2.3790.4396   C:\WINDOWS\system32
+77c20000 RPCRT4.dll             5.2.3790.4502   C:\WINDOWS\system32
+77cd0000 COMCTL32.DLL           6.0.3790.3959   C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.3790.3959_x-ww_D8713E55
+77e10000 USER32.dll             5.2.3790.4033   C:\WINDOWS\system32
+77eb0000 SHLWAPI.dll            6.0.3790.3959   C:\WINDOWS\system32
+77f30000 ADVAPI32.DLL           5.2.3790.4455   C:\WINDOWS\system32
+78520000 MSVCR90.dll            9.0.30729.4148  C:\WINDOWS\WinSxS\x86_Microsoft.VC90.CRT_1fc8b3b9a1e18e3b_9.0.30729.4148_x-ww_D495AC4E
+7c800000 kernel32.dll           5.2.3790.4480   C:\WINDOWS\system32
+7c930000 ntdll.dll              5.2.3790.4455   C:\WINDOWS\system32
+7ca10000 SHELL32.dll            6.0.3790.4315   C:\WINDOWS\system32
+7f000000 LPK.DLL                5.2.3790.3959   C:\WINDOWS\system32
+
+processes:
+0000 Idle
+0004 System                      normal
+0190 smss.exe                    normal       C:\WINDOWS\system32
+01c0 csrss.exe
+01d8 winlogon.exe                high         C:\WINDOWS\system32
+0208 services.exe                normal       C:\WINDOWS\system32
+0214 lsass.exe                   normal       C:\WINDOWS\system32
+02bc nvsvc32.exe                 normal       C:\WINDOWS\system32
+02f4 svchost.exe                 normal       C:\WINDOWS\system32
+0324 svchost.exe
+0374 svchost.exe
+0398 svchost.exe
+03c4 svchost.exe                 normal       C:\WINDOWS\System32
+0448 spoolsv.exe                 normal       C:\WINDOWS\system32
+04a8 WVSScheduler.exe            normal       C:\Program Files\Acunetix\Web Vulnerability Scanner 6
+04dc cisvc.exe                   normal       C:\WINDOWS\system32
+04f0 DCService.exe               normal       C:\Documents and Settings\All Users\Application Data\DatacardService
+052c ftpservice.exe              normal       C:\Program Files\Sonic FTP Server
+05b0 jqs.exe                     idle         C:\Program Files\Java\jre6\bin
+05e4 mdm.exe                     normal       C:\Program Files\Common Files\Microsoft Shared\VS7Debug
+0620 sqlservr.exe                normal       C:\PROGRA~1\MICROS~4\MSSQL\binn
+0690 mysqld.exe                  normal       C:\Program Files\MySQL\MySQL Server 5.1\bin
+079c PhDdnsCore.exe              normal       C:\Program Files\Oray\PhDDNS
+07bc rserver3.exe                normal       C:\Program Files\Radmin Server
+0818 sntlkeyssrvr.exe            normal       C:\Program Files\Common Files\SafeNet Sentinel\Sentinel Keys Server
+0830 spnsrvnt.exe                normal       C:\Program Files\Common Files\SafeNet Sentinel\Sentinel Protection Server\WinNT
+0880 sntlsrtsrvr.exe             normal       C:\Program Files\Common Files\SafeNet Sentinel\Sentinel Security Runtime
+08a0 Serv-U.exe                  normal       C:\Program Files\RhinoSoft.com\Serv-U
+08f4 sqlbrowser.exe
+0910 sqlwriter.exe               normal       C:\Program Files\Microsoft SQL Server\90\Shared
+092c svchost.exe
+0980 svchost.exe                 normal       C:\WINDOWS\System32
+09cc vmnat.exe                   normal       C:\WINDOWS\system32
+0a14 EMSVR.EXE                   normal       C:\WINWEB~1
+0a2c svchost.exe                 normal       C:\WINDOWS\system32
+0a40 mssearch.exe                normal       C:\Program Files\Common Files\System\MSSearch\Bin
+0aa8 vmware-authd.exe            normal       C:\Program Files\VMware\VMware Workstation
+0b04 vmnetdhcp.exe               normal       C:\WINDOWS\system32
+0df4 Explorer.EXE                normal       C:\WINDOWS
+0e5c FamItrfc.Exe                high         C:\Program Files\Radmin Server
+01a8 TortoiseHgOverlayServer.exe normal       C:\Program Files\TortoiseHg
+01bc Everything-1.2.1.371.exe    normal       C:\Program Files\Everything-1.2.1.371
+01f0 googletalk.exe              normal       C:\Program Files\Google\Google Talk
+0358 issch.exe                   normal       C:\Program Files\Common Files\InstallShield\UpdateService
+0380 jusched.exe                 normal       C:\Program Files\Common Files\Java\Java Update
+03cc Skype.exe                   normal       c:\program files\skype\Phone
+05f0 YodaoDict.exe               normal       C:\Program Files\Youdao\Dict
+0520 everbox.exe                 normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\EverBox
+068c TSVNCache.exe               normal       C:\Program Files\TortoiseSVN\bin
+0b84 wmiprvse.exe
+0d54 skypePM.exe                 normal       C:\program files\skype\Plugin Manager
+05cc wing.exe                    normal       C:\Program Files\Wing IDE 3.2\bin
+0484 conime.exe                  normal       C:\WINDOWS\system32
+0c58 ProxyThorn.exe              normal       C:\Documents and Settings\Administrator\桌面\花刺代理验证程序
+0320 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+076c chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+02d4 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+0508 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+0668 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+0d44 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+12d4 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+12dc chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+13e0 chrome.exe                  below normal C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+108c QQ.exe                      normal       C:\Program Files\Tencent\QQ\Bin
+10d4 TXPlatform.exe              normal       C:\Program Files\Tencent\QQIntl\Bin
+175c chrome.exe                  below normal C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+15a8 cidaemon.exe                idle         C:\WINDOWS\system32
+15e0 cidaemon.exe                idle         C:\WINDOWS\system32
+1620 cidaemon.exe                idle         C:\WINDOWS\system32
+1528 python.exe                  normal       C:\Python25
+0b10 QQ.exe                      normal       C:\Program Files\Tencent\QQ\Bin
+0600 rundll32.exe                normal       C:\WINDOWS\system32
+17c8 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+0288 Thunder.exe                 normal       C:\Program Files\Thunder Network\Thunder\Program
+107c thunderplatform.exe         normal       c:\program files\common files\thunder network\tp\ver1\1.1.2.58_1111
+17a0 GoogleCrashHandler.exe      normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Update\1.2.183.39
+1110 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+1458 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+171c chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+1058 chrome.exe                  normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+139c AcroRd32.exe                normal       C:\Program Files\Adobe\Reader 9.0\Reader
+09e0 uedit32.exe                 normal       C:\Program Files\IDM Computer Solutions\UltraEdit
+1708 Radmin.exe                  normal       E:\Tools\Radmin Viewer\Radmin Viewer
+1478 chrome.exe                  below normal C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+145c chrome.exe                  below normal C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+0270 inetinfo.exe                normal       C:\WINDOWS\system32\inetsrv
+06e0 svchost.exe                 normal       C:\WINDOWS\System32
+13bc w3wp.exe                    normal       c:\windows\system32\inetsrv
+0aec 渗透终极利器reDuh GUI(图).exe      normal       C:\Documents and Settings\Administrator\My Documents\Downloads\re0uhgsent\渗透终极利器reDuh GUI(图)
+
+hardware:
++ DVD/CD-ROM 驱动器
+  - BS5036U PQH036T SCSI CdRom Device
+  - TSSTcorp CDDVDW TS-H652H
++ IDE ATA/ATAPI 控制器
+  - NVIDIA MCP61 Serial ATA Controller (driver 5.10.2600.692)
+  - 标准双通道 PCI IDE 控制器
+  - 次要 IDE 通道
+  - 主要 IDE 通道
++ NVIDIA Network Bus Enumerator
+  - NVIDIA Network Bus Enumerator (driver 73.1.0.0)
++ SCSI 和 RAID 控制器
+  - SCSI/RAID Host Controller
++ 处理器
+  - AMD Athlon(tm) 64 X2 Dual Core Processor 5200+ (driver 1.3.2.0)
+  - AMD Athlon(tm) 64 X2 Dual Core Processor 5200+ (driver 1.3.2.0)
++ 磁盘驱动器
+  - Kingston DT 101 II USB Device
+  - ST3500320AS
++ 端口 (COM 和 LPT)
+  - 打印机端口 (LPT1)
+  - 通信端口 (COM1)
++ 监视器
+  - 默认监视器
++ 计算机
+  - ACPI Multiprocessor PC
++ 键盘
+  - Standard 101/102-Key or Microsoft Natural PS/2 Keyboard
++ 声音、视频和游戏控制器
+  - Realtek High Definition Audio (driver 5.10.0.6151)
+  - 传统视频捕捉设备
+  - 传统音频驱动程序
+  - 媒体控制设备
+  - 视频编码解码器
+  - 音频编码解码器
++ 鼠标和其它指针设备
+  - PS/2 Compatible Mouse
++ 通用串行总线控制器
+  - Standard Enhanced PCI to USB Host Controller
+  - Standard OpenHCD USB Host Controller
+  - USB Composite Device
+  - USB Mass Storage Device
+  - USB Root Hub
+  - USB Root Hub
++ 图像处理设备
+  - USB 视频设备
++ 网络适配器
+  - NVIDIA nForce 10/100 Mbps Ethernet #2 (driver 73.1.0.0)
+  - Realtek RTL8188SU Wireless LAN 802.11n USB 2.0 Network Adapter (driver 1084.45.1125.2010)
+  - TeamViewer VPN Adapter (driver 2.10.0.0)
+  - VMware Virtual Ethernet Adapter for VMnet1 (driver 4.0.2.0)
+  - VMware Virtual Ethernet Adapter for VMnet8 (driver 4.0.2.0)
++ 系统设备
+  - ACPI Fixed Feature Button
+  - ACPI Power Button
+  - AMD Address Map Configuration
+  - AMD DRAM and HyperTransport(tm) Trace Mode Configuration
+  - AMD HyperTransport(tm) Configuration
+  - AMD Low Level Device Driver (driver 1.0.1.0)
+  - AMD Miscellaneous Configuration
+  - Direct memory access controller
+  - Extended IO Bus
+  - High Precision Event Timer (driver 7.0.0.1011)
+  - ISAPNP Read Data Port
+  - Logical Disk Manager
+  - Microcode Update Device
+  - Microsoft ACPI-Compliant System
+  - Microsoft System Management BIOS Driver
+  - Microsoft UAA Bus Driver for High Definition Audio
+  - Motherboard resources
+  - Motherboard resources
+  - Motherboard resources
+  - Numeric data processor
+  - NVIDIA nForce PCI System Management (driver 4.6.9.0)
+  - PCI bus
+  - PCI standard ISA bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard RAM Controller
+  - PCI standard RAM Controller
+  - Plug and Play Software Device Enumerator
+  - Printer Port Logical Interface
+  - Programmable interrupt controller
+  - System board
+  - System CMOS/real time clock
+  - System speaker
+  - System timer
+  - Volume Manager
+  - 控制台的全屏显示视频驱动程序
+  - 终端服务器键盘驱动程序
+  - 终端服务器设备重定向器
+  - 终端服务器鼠标驱动程序
++ 显示卡
+  - NVIDIA GeForce 6150SE nForce 430 (driver 6.14.12.5919)
+  - Radmin Mirror Driver V3 (driver 3.0.0.0)
+
+cpu registers:
+eax = c6bfc7fa
+ebx = c6bfc7fa
+ecx = 00f11a38
+edx = 0012f4cc
+esi = 00ec1210
+edi = 00eba19c
+eip = 004071df
+esp = 0012f408
+ebp = 0012f40c
+
+stack dump:
+0012f408  38 1a f1 00 40 f4 12 00 - 7b 3a 41 00 fa c7 bf c6  8...@...{:A.....
+0012f418  b8 f4 12 00 cc f4 12 00 - d7 43 49 00 a4 53 4f 00  .........CI..SO.
+0012f428  18 f4 12 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0012f438  00 00 00 00 20 f5 12 00 - 20 f5 12 00 01 8f 40 00  ..............@.
+0012f448  38 1a f1 00 c0 f6 12 00 - 34 cb 44 00 60 e0 e5 00  8.......4.D.`...
+0012f458  e8 9f b2 74 08 00 00 00 - 00 00 00 00 00 00 00 00  ...t............
+0012f468  a0 04 00 00 00 00 00 00 - b2 12 01 06 e4 a3 b2 74  ...............t
+0012f478  f8 a1 b2 74 2c a4 b2 74 - b8 a4 b2 74 30 f5 12 00  ...t,..t...t0...
+0012f488  f8 a1 b2 74 e8 9f b2 74 - 90 11 ec 00 00 00 00 00  ...t...t........
+0012f498  f8 a1 b2 74 e8 9f b2 74 - 90 11 ec 00 60 00 00 00  ...t...t....`...
+0012f4a8  60 00 00 00 0d 00 00 00 - 10 12 ec 00 e0 f4 12 00  `...............
+0012f4b8  60 00 00 00 0d 00 00 00 - 10 12 ec 00 00 00 00 00  `...............
+0012f4c8  d0 d2 e4 00 a0 f8 12 00 - d7 43 49 00 38 3e 4f 00  .........CI.8>O.
+0012f4d8  4c f4 12 00 00 00 00 00 - 0c f5 12 00 71 65 b1 74  L...........qe.t
+0012f4e8  00 00 00 00 04 a1 b2 74 - 60 9f eb 00 10 2e 4f 00  .......t`.....O.
+0012f4f8  b0 9f eb 00 08 33 4f 00 - 00 00 00 00 b0 78 ed 00  .....3O......x..
+0012f508  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0012f518  00 00 00 00 00 00 00 00 - 64 f6 12 00 61 b6 47 00  ........d...a.G.
+0012f528  60 e0 e5 00 57 cb 44 00 - c0 f6 12 00 c5 d5 44 00  `...W.D.......D.
+0012f538  60 e0 e5 00 f5 b0 47 00 - c0 f6 12 00 d0 f8 12 00  `.....G.........
+
+disassembling:
+004071d8     public nsServer.cpp.nsServer.Stop:  ; function entry point
+004071d8 125           ebp
+004071d9               ebp, esp
+004071db               ebx
+004071dc               ebx, [ebp+8]
+004071df 127 >         dword ptr [ebx+$14], 1
+004071e6 128           eax, [ebx+$10]
+004071e9               eax
+004071ea               +$e98eb ($4f0ada)      ; closesocket (WS2_32.dll)
+004071ef 129           dword ptr [ebx+$10], $ffffffff
+004071f6 130           $ffffffff
+[...]
+
+date/time         : 2011-06-12, 16:49:21, 250ms
+computer name     : REDICE
+user name         : Administrator <admin>
+registered owner  : redice / taoyard.com
+operating system  : Windows 2003 Service Pack 2 build 3790
+system language   : Chinese
+system up time    : 3 hours 14 minutes
+program up time   : 9 minutes 3 seconds
+processors        : 2x AMD Athlon(tm) 64 X2 Dual Core Processor 5200+
+physical memory   : 307/1983 MB (free/total)
+free disk space   : (C:) 2.74 GB
+display mode      : 1920x1080, 32 bit
+process id        : $1ff0
+allocated memory  : 14.55 MB
+executable        : 渗透终极利器reDuh GUI(图).exe
+exec. date/time   : 2009-07-28 21:52
+compiled with     : BCB 2009
+madExcept version : 3.0i beta 2
+callstack crc     : $1a452fb4, $a1249300, $f074c854
+count             : 4
+exception number  : 1
+exception class   : EAccessViolation
+exception message : Access violation at address 004071DF in module '渗透终极利器reDuh GUI(图).exe'. Write of address C6BFC80E.
+
+main thread ($1fec):
+004071df +007 渗透终极利器reDuh GUI(图).exe nsServer.cpp     127  +2 nsServer.Stop
+00413a76 +022 渗透终极利器reDuh GUI(图).exe tunnelThread.cpp 202  +5 TTunnelThread.Stop
+00408efc +2d8 渗透终极利器reDuh GUI(图).exe reDuchMain.cpp   241 +38 TForm1.killBtnClick
+0047b65b +06f 渗透终极利器reDuh GUI(图).exe Controls                 TControl.Click
+0044cb52 +01e 渗透终极利器reDuh GUI(图).exe Stdctrls                 TCustomButton.Click
+0044d5c0 +010 渗透终极利器reDuh GUI(图).exe Stdctrls                 TCustomButton.CNCommand
+0047b0f2 +2d2 渗透终极利器reDuh GUI(图).exe Controls                 TControl.WndProc
+0047f5f7 +513 渗透终极利器reDuh GUI(图).exe Controls                 TWinControl.WndProc
+0044c818 +06c 渗透终极利器reDuh GUI(图).exe Stdctrls                 TButtonControl.WndProc
+0047ad18 +024 渗透终极利器reDuh GUI(图).exe Controls                 TControl.Perform
+0047f747 +023 渗透终极利器reDuh GUI(图).exe Controls                 _16950
+00480143 +00b 渗透终极利器reDuh GUI(图).exe Controls                 TWinControl.WMCommand
+004691dc +02c 渗透终极利器reDuh GUI(图).exe Forms                    TCustomForm.WMCommand
+0040e74a +012 渗透终极利器reDuh GUI(图).exe reDuchMain.h      50  +2 TForm1.Dispatch
+0047b0f2 +2d2 渗透终极利器reDuh GUI(图).exe Controls                 TControl.WndProc
+0047f5f7 +513 渗透终极利器reDuh GUI(图).exe Controls                 TWinControl.WndProc
+0046614c +594 渗透终极利器reDuh GUI(图).exe Forms                    TCustomForm.WndProc
+0047ed10 +02c 渗透终极利器reDuh GUI(图).exe Controls                 TWinControl.MainWndProc
+00424658 +014 渗透终极利器reDuh GUI(图).exe Classes                  _17453
+77e2c332 +044 USER32.dll                                             SendMessageW
+77e2bf6f +016 USER32.dll                                             CallWindowProcW
+0047f6f3 +0d7 渗透终极利器reDuh GUI(图).exe Controls                 TWinControl.DefaultHandler
+0047ba78 +010 渗透终极利器reDuh GUI(图).exe Controls                 TControl.WMLButtonUp
+0047b0f2 +2d2 渗透终极利器reDuh GUI(图).exe Controls                 TControl.WndProc
+0047f5f7 +513 渗透终极利器reDuh GUI(图).exe Controls                 TWinControl.WndProc
+0044c818 +06c 渗透终极利器reDuh GUI(图).exe Stdctrls                 TButtonControl.WndProc
+0047ed10 +02c 渗透终极利器reDuh GUI(图).exe Controls                 TWinControl.MainWndProc
+00424658 +014 渗透终极利器reDuh GUI(图).exe Classes                  _17453
+77e2bacb +00a USER32.dll                                             DispatchMessageW
+0046e74d +11d 渗透终极利器reDuh GUI(图).exe Forms                    TApplication.ProcessMessage
+0046e77a +00a 渗透终极利器reDuh GUI(图).exe Forms                    TApplication.HandleMessage
+0046eaa5 +0c9 渗透终极利器reDuh GUI(图).exe Forms                    TApplication.Run
+0040734a +052 渗透终极利器reDuh GUI(图).exe reDuhGUI.cpp      21  +7 WinMain
+0049e866 +156 渗透终极利器reDuh GUI(图).exe                          __startup
+
+thread $1190: <priority:1>
+7c9577f7 +0a ntdll.dll                               NtRemoveIoCompletion
+004c751d +0d 渗透终极利器reDuh GUI(图).exe Madexcept _17200
+004c7587 +37 渗透终极利器reDuh GUI(图).exe Madexcept _17201
+>> created by main thread ($1fec) at:
+71a85da2 +00 mswsock.dll
+
+thread $187c (TTunnelThread):
+7c956f67 +0a ntdll.dll                                              NtDelayExecution
+7c801ed3 +47 kernel32.dll                                           SleepEx
+7c8024f8 +0a kernel32.dll                                           Sleep
+00413a22 +9a 渗透终极利器reDuh GUI(图).exe tunnelThread.cpp 182 +14 TTunnelThread.Execute
+004c763b +2b 渗透终极利器reDuh GUI(图).exe Madexcept                _17202
+00422f06 +42 渗透终极利器reDuh GUI(图).exe Classes                  _17295
+0043d2d4 +28 渗透终极利器reDuh GUI(图).exe System                   _16870
+004c751d +0d 渗透终极利器reDuh GUI(图).exe Madexcept                _17200
+004c7587 +37 渗透终极利器reDuh GUI(图).exe Madexcept                _17201
+>> created by main thread ($1fec) at:
+004135d6 +46 渗透终极利器reDuh GUI(图).exe tunnelThread.cpp 159  +1 TTunnelThread.Create
+
+thread $1884:
+7c957d27 +0a ntdll.dll                                          NtWaitForSingleObject
+71b71021 +82 WS2_32.dll                                         WSAAccept
+71b712bd +12 WS2_32.dll                                         accept
+00406ed1 +95 渗透终极利器reDuh GUI(图).exe nsServer.cpp     149 ThttpDataQueueManager.Destroy
+004c751d +0d 渗透终极利器reDuh GUI(图).exe Madexcept            _17200
+004c7587 +37 渗透终极利器reDuh GUI(图).exe Madexcept            _17201
+>> created by thread $187c (TTunnelThread) at:
+00407195 +1d 渗透终极利器reDuh GUI(图).exe nsServer.cpp 114  +3 nsServer.Start
+
+modules:
+00390000 SSLEAY32.dll           0.9.8.8         C:\Documents and Settings\Administrator\My Documents\Downloads\re0uhgsent\渗透终极利器reDuh GUI(图)
+00400000 渗透终极利器reDuh GUI(图).exe                 C:\Documents and Settings\Administrator\My Documents\Downloads\re0uhgsent\渗透终极利器reDuh GUI(图)
+00550000 LIBEAY32.dll           0.9.8.8         C:\Documents and Settings\Administrator\My Documents\Downloads\re0uhgsent\渗透终极利器reDuh GUI(图)
+10000000 LIBCURL.DLL            7.19.5.0        C:\Documents and Settings\Administrator\My Documents\Downloads\re0uhgsent\渗透终极利器reDuh GUI(图)
+4c510000 msctfime.ime           5.2.3790.3959   C:\WINDOWS\system32
+69660000 hnetcfg.dll            5.2.3790.3959   C:\WINDOWS\system32
+71a40000 wshtcpip.dll           5.2.3790.3959   C:\WINDOWS\System32
+71a80000 mswsock.dll            5.2.3790.4318   C:\WINDOWS\system32
+71ad0000 uxtheme.dll            6.0.3790.3959   C:\WINDOWS\system32
+71b10000 WSOCK32.DLL            5.2.3790.0      C:\WINDOWS\system32
+71b50000 WS2HELP.dll            5.2.3790.3959   C:\WINDOWS\system32
+71b60000 WS2_32.dll             5.2.3790.3959   C:\WINDOWS\system32
+74ae0000 USP10.dll              1.422.3790.3959 C:\WINDOWS\system32
+75d60000 apphelp.dll            5.2.3790.3959   C:\WINDOWS\system32
+76170000 MSIMG32.DLL            5.2.3790.0      C:\WINDOWS\system32
+76180000 IMM32.DLL              5.2.3790.3959   C:\WINDOWS\system32
+761a0000 COMDLG32.DLL           6.0.3790.3959   C:\WINDOWS\system32
+76eb0000 Secur32.dll            5.2.3790.4455   C:\WINDOWS\system32
+774b0000 OLE32.DLL              5.2.3790.3959   C:\WINDOWS\system32
+775f0000 OLEAUT32.DLL           5.2.3790.4202   C:\WINDOWS\system32
+77b60000 VERSION.DLL            5.2.3790.3959   C:\WINDOWS\system32
+77b70000 msvcrt.dll             7.0.3790.3959   C:\WINDOWS\system32
+77bd0000 GDI32.dll              5.2.3790.4396   C:\WINDOWS\system32
+77c20000 RPCRT4.dll             5.2.3790.4502   C:\WINDOWS\system32
+77cd0000 COMCTL32.DLL           6.0.3790.3959   C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.3790.3959_x-ww_D8713E55
+77e10000 USER32.dll             5.2.3790.4033   C:\WINDOWS\system32
+77eb0000 SHLWAPI.dll            6.0.3790.3959   C:\WINDOWS\system32
+77f30000 ADVAPI32.DLL           5.2.3790.4455   C:\WINDOWS\system32
+78520000 MSVCR90.dll            9.0.30729.4148  C:\WINDOWS\WinSxS\x86_Microsoft.VC90.CRT_1fc8b3b9a1e18e3b_9.0.30729.4148_x-ww_D495AC4E
+7c800000 kernel32.dll           5.2.3790.4480   C:\WINDOWS\system32
+7c930000 ntdll.dll              5.2.3790.4455   C:\WINDOWS\system32
+7ca10000 SHELL32.dll            6.0.3790.4315   C:\WINDOWS\system32
+7f000000 LPK.DLL                5.2.3790.3959   C:\WINDOWS\system32
+
+processes:
+0000 Idle                        0
+0004 System                      0 normal
+0190 smss.exe                    0 normal       C:\WINDOWS\system32
+01c0 csrss.exe                   0
+01d8 winlogon.exe                0 high         C:\WINDOWS\system32
+0208 services.exe                0 normal       C:\WINDOWS\system32
+0214 lsass.exe                   0 normal       C:\WINDOWS\system32
+02bc nvsvc32.exe                 0 normal       C:\WINDOWS\system32
+02f4 svchost.exe                 0 normal       C:\WINDOWS\system32
+0324 svchost.exe                 0
+0374 svchost.exe                 0
+0398 svchost.exe                 0
+03c4 svchost.exe                 0 normal       C:\WINDOWS\System32
+0448 spoolsv.exe                 0 normal       C:\WINDOWS\system32
+04a8 WVSScheduler.exe            0 normal       C:\Program Files\Acunetix\Web Vulnerability Scanner 6
+04dc cisvc.exe                   0 normal       C:\WINDOWS\system32
+04f0 DCService.exe               0 normal       C:\Documents and Settings\All Users\Application Data\DatacardService
+052c ftpservice.exe              0 normal       C:\Program Files\Sonic FTP Server
+05b0 jqs.exe                     0 idle         C:\Program Files\Java\jre6\bin
+05e4 mdm.exe                     0 normal       C:\Program Files\Common Files\Microsoft Shared\VS7Debug
+0620 sqlservr.exe                0 normal       C:\PROGRA~1\MICROS~4\MSSQL\binn
+0690 mysqld.exe                  0 normal       C:\Program Files\MySQL\MySQL Server 5.1\bin
+079c PhDdnsCore.exe              0 normal       C:\Program Files\Oray\PhDDNS
+07bc rserver3.exe                0 normal       C:\Program Files\Radmin Server
+0818 sntlkeyssrvr.exe            0 normal       C:\Program Files\Common Files\SafeNet Sentinel\Sentinel Keys Server
+0830 spnsrvnt.exe                0 normal       C:\Program Files\Common Files\SafeNet Sentinel\Sentinel Protection Server\WinNT
+0880 sntlsrtsrvr.exe             0 normal       C:\Program Files\Common Files\SafeNet Sentinel\Sentinel Security Runtime
+08a0 Serv-U.exe                  0 normal       C:\Program Files\RhinoSoft.com\Serv-U
+08f4 sqlbrowser.exe              0
+0910 sqlwriter.exe               0 normal       C:\Program Files\Microsoft SQL Server\90\Shared
+092c svchost.exe                 0
+0980 svchost.exe                 0 normal       C:\WINDOWS\System32
+09cc vmnat.exe                   0 normal       C:\WINDOWS\system32
+0a14 EMSVR.EXE                   0 normal       C:\WINWEB~1
+0a2c svchost.exe                 0 normal       C:\WINDOWS\system32
+0a40 mssearch.exe                0 normal       C:\Program Files\Common Files\System\MSSearch\Bin
+0aa8 vmware-authd.exe            0 normal       C:\Program Files\VMware\VMware Workstation
+0b04 vmnetdhcp.exe               0 normal       C:\WINDOWS\system32
+0df4 Explorer.EXE                0 normal       C:\WINDOWS
+0e5c FamItrfc.Exe                0 high         C:\Program Files\Radmin Server
+01a8 TortoiseHgOverlayServer.exe 0 normal       C:\Program Files\TortoiseHg
+01bc Everything-1.2.1.371.exe    0 normal       C:\Program Files\Everything-1.2.1.371
+01f0 googletalk.exe              0 normal       C:\Program Files\Google\Google Talk
+0358 issch.exe                   0 normal       C:\Program Files\Common Files\InstallShield\UpdateService
+0380 jusched.exe                 0 normal       C:\Program Files\Common Files\Java\Java Update
+03cc Skype.exe                   0 normal       c:\program files\skype\Phone
+05f0 YodaoDict.exe               0 normal       C:\Program Files\Youdao\Dict
+0520 everbox.exe                 0 normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\EverBox
+068c TSVNCache.exe               0 normal       C:\Program Files\TortoiseSVN\bin
+0b84 wmiprvse.exe                0
+0d54 skypePM.exe                 0 normal       C:\program files\skype\Plugin Manager
+05cc wing.exe                    0 normal       C:\Program Files\Wing IDE 3.2\bin
+0484 conime.exe                  0 normal       C:\WINDOWS\system32
+0c58 ProxyThorn.exe              0 normal       C:\Documents and Settings\Administrator\桌面\花刺代理验证程序
+0320 chrome.exe                  0 normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+076c chrome.exe                  0 normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+02d4 chrome.exe                  0 normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+0508 chrome.exe                  0 normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+0668 chrome.exe                  0 normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+0d44 chrome.exe                  0 normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+12d4 chrome.exe                  0 normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+12dc chrome.exe                  0 normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+13e0 chrome.exe                  0 below normal C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+108c QQ.exe                      0 normal       C:\Program Files\Tencent\QQ\Bin
+10d4 TXPlatform.exe              0 normal       C:\Program Files\Tencent\QQIntl\Bin
+175c chrome.exe                  0 below normal C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+15a8 cidaemon.exe                0 idle         C:\WINDOWS\system32
+15e0 cidaemon.exe                0 idle         C:\WINDOWS\system32
+1620 cidaemon.exe                0 idle         C:\WINDOWS\system32
+1528 python.exe                  0 normal       C:\Python25
+0b10 QQ.exe                      0 normal       C:\Program Files\Tencent\QQ\Bin
+0600 rundll32.exe                0 normal       C:\WINDOWS\system32
+17c8 chrome.exe                  0 normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+0288 Thunder.exe                 0 normal       C:\Program Files\Thunder Network\Thunder\Program
+107c thunderplatform.exe         0 normal       c:\program files\common files\thunder network\tp\ver1\1.1.2.58_1111
+17a0 GoogleCrashHandler.exe      0 normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Update\1.2.183.39
+1110 chrome.exe                  0 normal       C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+1458 chrome.exe                  0 below normal C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+171c chrome.exe                  0 below normal C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+139c AcroRd32.exe                0 normal       C:\Program Files\Adobe\Reader 9.0\Reader
+09e0 uedit32.exe                 0 normal       C:\Program Files\IDM Computer Solutions\UltraEdit
+1478 chrome.exe                  0 below normal C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+145c chrome.exe                  0 below normal C:\Documents and Settings\Administrator\Local Settings\Application Data\Google\Chrome\Application
+0270 inetinfo.exe                0 normal       C:\WINDOWS\system32\inetsrv
+06e0 svchost.exe                 0 normal       C:\WINDOWS\System32
+13bc w3wp.exe                    0 normal       c:\windows\system32\inetsrv
+0474 wmiprvse.exe                0
+0cd0 svchost.exe                 0 normal       C:\WINDOWS\System32
+130c csrss.exe                   1
+12fc winlogon.exe                1 high         C:\WINDOWS\system32
+0bc0 rdpclip.exe                 1 normal       C:\WINDOWS\system32
+015c Explorer.EXE                1 normal       C:\WINDOWS
+0a88 TortoiseHgOverlayServer.exe 1 normal       C:\Program Files\TortoiseHg
+1134 Everything-1.2.1.371.exe    1 normal       C:\Program Files\Everything-1.2.1.371
+0a20 googletalk.exe              1 normal       C:\Program Files\Google\Google Talk
+0d24 issch.exe                   1 normal       C:\Program Files\Common Files\InstallShield\UpdateService
+1474 jusched.exe                 1 normal       C:\Program Files\Common Files\Java\Java Update
+0cc0 Skype.exe                   1 normal       c:\program files\skype\Phone
+03b4 vidalia.exe                 1 normal       C:\Program Files\Vidalia Bundle\Vidalia
+1784 NPSWF32_FlashUtil.exe       1 normal       C:\WINDOWS\system32\Macromed\Flash
+0cc4 YodaoDict.exe               1 normal       C:\Program Files\Youdao\Dict
+1a80 cmd.exe                     1 normal       C:\WINDOWS
+1a90 conime.exe                  1 normal       C:\WINDOWS\system32
+1b10 tor.exe                     1 normal       C:\Program Files\Vidalia Bundle\Tor
+1b28 polipo.exe                  1 normal       C:\Program Files\Vidalia Bundle\Polipo
+1ff0 渗透终极利器reDuh GUI(图).exe      0 normal       C:\Documents and Settings\Administrator\My Documents\Downloads\re0uhgsent\渗透终极利器reDuh GUI(图)
+1b94 mmc.exe                     0 normal       C:\WINDOWS\System32
+
+hardware:
++ DVD/CD-ROM 驱动器
+  - BS5036U PQH036T SCSI CdRom Device
+  - TSSTcorp CDDVDW TS-H652H
++ IDE ATA/ATAPI 控制器
+  - NVIDIA MCP61 Serial ATA Controller (driver 5.10.2600.692)
+  - 标准双通道 PCI IDE 控制器
+  - 次要 IDE 通道
+  - 主要 IDE 通道
++ NVIDIA Network Bus Enumerator
+  - NVIDIA Network Bus Enumerator (driver 73.1.0.0)
++ SCSI 和 RAID 控制器
+  - SCSI/RAID Host Controller
++ 处理器
+  - AMD Athlon(tm) 64 X2 Dual Core Processor 5200+ (driver 1.3.2.0)
+  - AMD Athlon(tm) 64 X2 Dual Core Processor 5200+ (driver 1.3.2.0)
++ 磁盘驱动器
+  - Kingston DT 101 II USB Device
+  - ST3500320AS
++ 端口 (COM 和 LPT)
+  - 打印机端口 (LPT1)
+  - 通信端口 (COM1)
++ 监视器
+  - 默认监视器
++ 计算机
+  - ACPI Multiprocessor PC
++ 键盘
+  - Standard 101/102-Key or Microsoft Natural PS/2 Keyboard
++ 声音、视频和游戏控制器
+  - Realtek High Definition Audio (driver 5.10.0.6151)
+  - 传统视频捕捉设备
+  - 传统音频驱动程序
+  - 媒体控制设备
+  - 视频编码解码器
+  - 音频编码解码器
++ 鼠标和其它指针设备
+  - PS/2 Compatible Mouse
++ 通用串行总线控制器
+  - Standard Enhanced PCI to USB Host Controller
+  - Standard OpenHCD USB Host Controller
+  - USB Composite Device
+  - USB Mass Storage Device
+  - USB Root Hub
+  - USB Root Hub
++ 图像处理设备
+  - USB 视频设备
++ 网络适配器
+  - NVIDIA nForce 10/100 Mbps Ethernet #2 (driver 73.1.0.0)
+  - Realtek RTL8188SU Wireless LAN 802.11n USB 2.0 Network Adapter (driver 1084.45.1125.2010)
+  - TeamViewer VPN Adapter (driver 2.10.0.0)
+  - VMware Virtual Ethernet Adapter for VMnet1 (driver 4.0.2.0)
+  - VMware Virtual Ethernet Adapter for VMnet8 (driver 4.0.2.0)
++ 系统设备
+  - ACPI Fixed Feature Button
+  - ACPI Power Button
+  - AMD Address Map Configuration
+  - AMD DRAM and HyperTransport(tm) Trace Mode Configuration
+  - AMD HyperTransport(tm) Configuration
+  - AMD Low Level Device Driver (driver 1.0.1.0)
+  - AMD Miscellaneous Configuration
+  - Direct memory access controller
+  - Extended IO Bus
+  - High Precision Event Timer (driver 7.0.0.1011)
+  - ISAPNP Read Data Port
+  - Logical Disk Manager
+  - Microcode Update Device
+  - Microsoft ACPI-Compliant System
+  - Microsoft System Management BIOS Driver
+  - Microsoft UAA Bus Driver for High Definition Audio
+  - Motherboard resources
+  - Motherboard resources
+  - Motherboard resources
+  - Numeric data processor
+  - NVIDIA nForce PCI System Management (driver 4.6.9.0)
+  - PCI bus
+  - PCI standard ISA bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard RAM Controller
+  - PCI standard RAM Controller
+  - Plug and Play Software Device Enumerator
+  - Printer Port Logical Interface
+  - Programmable interrupt controller
+  - System board
+  - System CMOS/real time clock
+  - System speaker
+  - System timer
+  - Volume Manager
+  - 控制台的全屏显示视频驱动程序
+  - 终端服务器键盘驱动程序
+  - 终端服务器设备重定向器
+  - 终端服务器鼠标驱动程序
++ 显示卡
+  - NVIDIA GeForce 6150SE nForce 430 (driver 6.14.12.5919)
+  - Radmin Mirror Driver V3 (driver 3.0.0.0)
+
+cpu registers:
+eax = c6bfc7fa
+ebx = c6bfc7fa
+ecx = 00f11a38
+edx = 0012f4cc
+esi = 00ec1210
+edi = 00eba1ec
+eip = 004071df
+esp = 0012f408
+ebp = 0012f40c
+
+stack dump:
+0012f408  38 1a f1 00 40 f4 12 00 - 7b 3a 41 00 fa c7 bf c6  8...@...{:A.....
+0012f418  b8 f4 12 00 cc f4 12 00 - d7 43 49 00 a4 53 4f 00  .........CI..SO.
+0012f428  18 f4 12 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0012f438  00 00 00 00 20 f5 12 00 - 20 f5 12 00 01 8f 40 00  ..............@.
+0012f448  38 1a f1 00 c0 f6 12 00 - 34 cb 44 00 60 e0 e5 00  8.......4.D.`...
+0012f458  00 00 00 00 00 00 00 00 - f8 a1 b2 74 1c a2 b2 74  ...........t...t
+0012f468  00 00 00 00 90 a2 b2 74 - 00 00 00 00 14 a3 b2 74  .......t.......t
+0012f478  00 00 00 00 6c a3 b2 74 - 00 00 00 00 e8 9f b2 74  ....l..t.......t
+0012f488  00 00 00 00 00 00 00 00 - 90 11 ec 00 00 f5 12 00  ................
+0012f498  00 00 00 00 00 00 00 00 - 90 11 ec 00 e8 9f b2 74  ...............t
+0012f4a8  00 00 00 00 74 f5 12 00 - 10 12 ec 00 a7 12 01 02  ....t...........
+0012f4b8  00 00 00 00 74 f5 12 00 - 10 12 ec 00 75 89 b1 74  ....t.......u..t
+0012f4c8  d0 d2 e4 00 a0 f8 12 00 - d7 43 49 00 38 3e 4f 00  .........CI.8>O.
+0012f4d8  4c f4 12 00 00 00 00 00 - 00 00 00 00 00 00 00 00  L...............
+0012f4e8  00 00 00 00 0c 00 00 00 - 60 9f eb 00 10 2e 4f 00  ........`.....O.
+0012f4f8  b0 9f eb 00 08 33 4f 00 - 00 00 00 00 f0 74 ed 00  .....3O......t..
+0012f508  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0012f518  00 00 00 00 00 00 00 00 - 64 f6 12 00 61 b6 47 00  ........d...a.G.
+0012f528  60 e0 e5 00 57 cb 44 00 - c0 f6 12 00 c5 d5 44 00  `...W.D.......D.
+0012f538  60 e0 e5 00 f5 b0 47 00 - c0 f6 12 00 d0 f8 12 00  `.....G.........
+
+disassembling:
+004071d8     public nsServer.cpp.nsServer.Stop:  ; function entry point
+004071d8 125           ebp
+004071d9               ebp, esp
+004071db               ebx
+004071dc               ebx, [ebp+8]
+004071df 127 >         dword ptr [ebx+$14], 1
+004071e6 128           eax, [ebx+$10]
+004071e9               eax
+004071ea               +$e98eb ($4f0ada)      ; closesocket (WS2_32.dll)
+004071ef 129           dword ptr [ebx+$10], $ffffffff
+004071f6 130           $ffffffff
+[...]
+

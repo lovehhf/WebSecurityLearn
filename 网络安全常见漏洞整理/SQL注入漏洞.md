@@ -1,0 +1,72 @@
+- 相关概念
+- 注入原理
+	- 说明
+		- 通过在用户可控参数中注入SQL语法，破坏原有SQL结构，达到编写程序时意料之外结果的攻击行为
+	- 影响
+		- 数据库增删改查
+		- 后台登录
+		- getshell
+- 注入分类
+	- 基于从服务器接收到的响应分类(SQLmap的分类)
+		- 基于错误的SQL注入(Error-based SQL injection)
+		- 可联合查询注入(UNIONquery SQL injection)
+		- 堆查询注入(Stacked SQL injection)
+		- SQL盲注
+			- 基于布尔SQL盲注(Boolean-basedbind SQL injection)
+			- 基于时间的SQL盲注(Time-basedbind SQL injection)
+	- 基于如何处理输入的SQL查询(数据类型)分类
+		- 基于字符串
+		- 数字或整数为基础
+	- 基于注入点的位置上的 
+		- 通过用户输入的表单域的注射
+		- 通过cookie注射
+		- 通过服务器变量注射(基于头部信息的注射)	
+- 注入案例
+	- 报错注入
+		- [csdn分站报错sql注入](http://wy.ichenfei.com/bug_detail.php?wybug_id=wooyun-2014-073051)
+		- [易车网某处MsSql报错注入](http://wy.ichenfei.com/bug_detail.php?wybug_id=wooyun-2015-091921)
+		- [网易163某站点MySQL报错注入](http://wy.ichenfei.com/bug_detail.php?wybug_id=wooyun-2016-0191354)
+	- 可联合查询注入(UNIONquery SQL injection)
+		- [上海交通大学sql注入第二弹（可联合查询）](http://wy.ichenfei.com/bug_detail.php?wybug_id=wooyun-2015-092493)
+		- [如家酒店某系统SQL注射支持联合查询](http://wy.ichenfei.com/bug_detail.php?wybug_id=wooyun-2014-069975)
+		- [新浪注入点严重可支持联合查询](http://wy.ichenfei.com/bug_detail.php?wybug_id=wooyun-2011-02058)
+	- 堆查询注入(Stacked SQL injection)
+	- 基于布尔SQL盲注(Boolean-basedbind SQL injection)
+		- [酷我音乐某处布尔型盲注](http://wy.ichenfei.com/bug_detail.php?wybug_id=wooyun-2015-0132811)
+		- [PPTV某站点存在布尔型盲注注入一枚](http://wy.ichenfei.com/bug_detail.php?wybug_id=wooyun-2015-0131789)
+		- [国家商务部某分站布尔型盲注](http://wy.ichenfei.com/bug_detail.php?wybug_id=wooyun-2015-0130342)
+	- 基于时间的SQL盲注(Time-basedbind SQL injection)
+		- [硅谷动力某处SQL时间盲注](http://wy.ichenfei.com/bug_detail.php?wybug_id=wooyun-2015-0130524)
+		- [某省能监网站sql时间盲注](http://wy.ichenfei.com/bug_detail.php?wybug_id=wooyun-2015-0133930)
+		- [句酷分站mysql时间盲注](http://wy.ichenfei.com/bug_detail.php?wybug_id=wooyun-2015-0104981)
+
+- 注入工具
+	- 神器sqlmap(可以替代市场上几乎所有工具)
+		- 7种等级
+		- 5种注入模式
+		- 支持几乎所有关系型数据库
+		- 常用参数
+		- tamper编写
+		- 奇技淫巧
+			- burpsuite集成sqlmap
+	- Havij
+	- Pangolin
+	- 啊D
+	- 明小子
+	- ......
+- 防止SQL注入
+	- 使用参数检查的方式，拦截带有SQL语法的参数传入应用程序
+	- 使用预编译的处理方式处理拼接了用户参数的SQL语句
+	- 在参数即将进入数据库执行之前，对SQL语句的语义进行完整性检查，确认语义没有发生变化
+	- 在出现SQL注入漏洞时，要在出现问题的参数拼接进SQL语句前进行过滤或者校验，不要依赖程序最开始处防护代码
+	- 定期审计数据库执行日志，查看是否存在应用程序正常逻辑之外的SQL语句执行
+- 绕过WAF
+
+相关链接:
+
+
+- [SQL注入关联分析 ---- WooYun知识库](http://drops.ichenfei.com/web-16972.html)
+- [MySQL注入技巧 ---- WooYun知识库](http://drops.ichenfei.com/tips-7299.html)
+- [使用SQLMAP对网站和数据库进行SQL注入攻击 ---- WooYun知识库](http://drops.ichenfei.com/tips-2113.html)
+- [深入了解SQL注入绕过waf和过滤机制 ---- WooYun知识库](http://drops.ichenfei.com/tips-968.html)
+- [MySql注入科普 ---- WooYun知识库](http://drops.ichenfei.com/tips-123.html)

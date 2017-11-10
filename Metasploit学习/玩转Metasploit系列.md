@@ -1,13 +1,13 @@
 
 - 玩转Metasploit系列——Freebuf:
-	- [玩转Metasploit系列（第一集）](http://www.freebuf.com/sectool/67674.html)
-	- [玩转Metasploit系列（第二集）](http://www.freebuf.com/sectool/67685.html)
-	- [玩转Metasploit系列（第三集）](http://www.freebuf.com/sectool/67923.html)
-	- [玩转Metasploit系列（第四集）](http://www.freebuf.com/sectool/68205.html)
-	- [玩转Metasploit系列（第五集）](http://www.freebuf.com/sectool/68409.html)
-	- [玩转Metasploit系列（第六集）](http://www.freebuf.com/sectool/69358.html)
-	- [玩转Metasploit系列（第七集）](http://www.freebuf.com/sectool/69362.html)
-	- [玩转metasploit系列（第八集）](http://www.freebuf.com/articles/82872.html)
+  - [玩转Metasploit系列（第一集）](http://www.freebuf.com/sectool/67674.html)
+  - [玩转Metasploit系列（第二集）](http://www.freebuf.com/sectool/67685.html)
+  - [玩转Metasploit系列（第三集）](http://www.freebuf.com/sectool/67923.html)
+  - [玩转Metasploit系列（第四集）](http://www.freebuf.com/sectool/68205.html)
+  - [玩转Metasploit系列（第五集）](http://www.freebuf.com/sectool/68409.html)
+  - [玩转Metasploit系列（第六集）](http://www.freebuf.com/sectool/69358.html)
+  - [玩转Metasploit系列（第七集）](http://www.freebuf.com/sectool/69362.html)
+  - [玩转metasploit系列（第八集）](http://www.freebuf.com/articles/82872.html)
 
 
 > Metasploit就是一个漏洞框架。它的全称叫做The Metasploit Framework，简称叫做MSF。Metasploit作为全球最受欢迎的工具，不仅仅是因为它的方便性和强大性，更重要的是它的框架。它允许使用者开发自己的漏洞脚本，从而进行测试。
@@ -149,4 +149,43 @@ Keywords:
 
 Examples:
   search cve:2009 type:exploit app:client
+```
+
+session
+```
+交互，查询或者终止当前的一些会话。如果要查看session的选项
+
+```
+
+set
+```
+payload或者其他模块进行设置。比如设置攻击目标的IP就是"set RHOST 192.168.0.2"
+```
+
+unset
+```
+如果你使用set命令后，发现设置错误了，可以选择unset重新设置
+```
+
+setg
+```
+这个和set有些类似，但是不同的是这个是一个全局变量设置。设置一次后再保存，那么以后，这个漏洞模块你就不用重复设置。但是请注意！如果你在某一个模块设置了全局变量，那么以后使用这个模块的时候请检查option选项。以免做重复的渗透工作。当然，如果你设置错误了，也可以用unsetg命令来重新设置。
+```
+
+show
+```
+如果单纯的输入show，那么就会显示出所有的payload，利用模块，post模块，插件等
+
+如果要显示利用模块，那么就输入show exploits。如果要显示payload，那么就输入show payloads。总共可以使用的是那么几个命令  ;show auxiliary;, ;show exploits;, ;show payloads;, ;show encoders;, 和 ;show nops;
+
+msf > help show 
+[*] Valid parameters for the "show" command are: all, encoders, nops, exploits, payloads, auxiliary, plugins, info, options
+[*] Additional module-specific parameters are: missing, advanced, evasion, targets, actions
+
+
+```
+
+use
+```
+
 ```

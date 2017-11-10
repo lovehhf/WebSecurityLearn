@@ -10,47 +10,47 @@
 <h3 style="color: red"> Windows搭建 SoftEther VPN 服务器</h3>
 1、选择 SoftEther VPN Server
 
-![](images/softether_vpn_1.jpg)
+<img src="images/softether_vpn_1.jpg" width="650">
 
 2、同意协议,一直下一步,开启 SoftEther VPN Server 管理工具
 
 3、编辑设置,设置管理员密码
 
-![](images/softether_vpn_2.jpg)
+<img src="images/softether_vpn_2.jpg" width="650">
 
 4、选择远程访问 VPN Server
 
-![](images/softether_vpn_3.jpg)
+<img src="images/softether_vpn_3.jpg" width="650">
 
 5、启用 L2TP 服务器功能
 
-![](images/softether_vpn_5.jpg)
+<img src="images/softether_vpn_5.jpg" width="650">
 
 6、可选vpn azure云服务 用于穿透内网
 
-![](images/softether_vpn_6.jpg)
+<img src="images/softether_vpn_6.jpg" width="650">
 
 7、创建用户,设置用户密码
 
-![](images/softether_vpn_7.jpg)
+<img src="images/softether_vpn_7.jpg" width="650">
 
 8、双击Hub,设置 NAT 和虚拟 DHCP 服务器
 
-![](images/softether_vpn_8.jpg)
+<img src="images/softether_vpn_8.jpg" width="650">
 
 9、启用secureNAT
 
-![](images/softether_vpn_9.jpg)
+<img src="images/softether_vpn_9.jpg" width="650">
 
 <h3 style="color: red">VPN Client连接</h3>
 
 1、 填写连接信息
 
-![](images/softether_vpn_10.jpg)
+<img src="images/softether_vpn_10.jpg" width="650">
 
 2、 连接成功
 
-![](images/softether_vpn_11.jpg)
+<img src="images/softether_vpn_11.jpg" width="650">
 
 
 参考:

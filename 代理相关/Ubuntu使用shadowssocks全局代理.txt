@@ -1,0 +1,13 @@
+
+
+错误:
+```bash
+AttributeError: /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1: undefined symbol: EVP_CIPHER_CTX_cleanup
+```
+
+解决方案: [run sslocal raise error](https://github.com/shadowsocks/shadowsocks/issues/646#issuecomment-267977330):
+```
+pip install -U git+https://github.com/shadowsocks/shadowsocks.git@master
+```
+参考:
+- [Ubuntu 使用 ShadowSocks + Privoxy 代理](http://blog.forecho.com/ubuntu-use-shadowsocks-and-privoxy.html)

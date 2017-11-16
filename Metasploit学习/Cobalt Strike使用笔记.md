@@ -31,7 +31,8 @@ https://eyun.baidu.com/s/3dEES1u5#sharelink/path=%2F
 
 参考链接:
 
-- [Cobalt strike3.0使用手册](http://wy.ichenfei.com/wooyun_drops/drops/tips-10345.html)
+- [Cobalt strike3.0使用手册 —— 乌云知识库](http://wy.ichenfei.com/wooyun_drops/drops/tips-10345.html)
+- [Cobalt Strike 之团队服务器的搭建与DNS通讯演示 ---- 乌云知识库](http://drops.ichenfei.com/tools-1475.html)
 - [cobalt strike 快速上手 [ 一 ]](https://klionsec.github.io/2017/09/23/cobalt-strike/)
 - [Cobalt Strike v3.1 Cracked](https://www.secpulse.com/archives/40799.html)
 - [Cobalt Strike学习笔记](http://www.freebuf.com/sectool/133369.html)

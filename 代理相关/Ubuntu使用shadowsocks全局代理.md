@@ -12,7 +12,7 @@ sudo vim /etc/ssclient.conf
 ```json
 {
     "server":"you_server_ip",
-    "server_port":server_ip,
+    "server_port":server_port,
     "local_address": "127.0.0.1",
     "local_port":1080,
     "password":"you_service_passwd",
@@ -181,11 +181,11 @@ git clone https://github.com/rofl0r/proxychains-ng.git
 cd proxychains-ng
 ./configure
 make && make install
-sudo vim /etc/proxychians.conf
+sudo vim /src/proxychains.conf
 ```
 
-<!-- cp ./src/proxychains.conf /etc/proxychians.conf
-sed -i -e '/^#/d' -e '/^$/d' /etc/proxychains.conf
+<!-- cp ./src/proxychains.conf //src/proxychains.conf
+sed -i -e '/^#/d' -e '/^$/d' /src/proxychains.conf
 
 将`socks4 127.0.0.1 9095`改为`socks5 127.0.0.1 1080` -->
 

@@ -180,17 +180,36 @@ unset ALL_PROXY
 git clone https://github.com/rofl0r/proxychains-ng.git
 cd proxychains-ng
 ./configure
-(sudo) make && make install
-cp ./src/proxychains.conf /etc/proxychians.conf
+make && make install
 sudo vim /etc/proxychians.conf
 ```
-将`socks4 127.0.0.1 9095`改为`socks5 127.0.0.1 1080`
+
+<!-- cp ./src/proxychains.conf /etc/proxychians.conf
+sed -i -e '/^#/d' -e '/^$/d' /etc/proxychains.conf
+
+将`socks4 127.0.0.1 9095`改为`socks5 127.0.0.1 1080` -->
+
+添加如下配置:
+
+```
+strict_chain
+proxy_dns 
+remote_dns_subnet 224
+tcp_read_time_out 15000
+tcp_connect_time_out 8000
+localnet 127.0.0.0/255.0.0.0
+quiet_mode
+
+[ProxyList]
+socks5  127.0.0.1 1080
+```
 
 在需要代理的命令前加上 `proxychains4` ，如：
-
 ```
 proxychains4 git clone git://github.com/WordPress/WordPress.git
 ```
+
+
 ![](images/proxychains使用1.jpg)
 
 

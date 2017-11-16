@@ -1,6 +1,6 @@
 
 
-### 下载安装
+## 下载安装
 
 下载地址:[点击直达](https://www.tenable.com/products/nessus/select-your-operating-system#download)
 
@@ -63,7 +63,9 @@ proxychains4 /opt/nessus/sbin/nessuscli update
 ```
 再次访问`https://ip:8834/`,会出现`Initializing, please wait...`,速度奇慢无比,不过不会出错,慢慢等就行了。
 
-### Nessus 使用
+<hr>
+
+## Nessus 使用
 
 #### 配置SMTP服务
 

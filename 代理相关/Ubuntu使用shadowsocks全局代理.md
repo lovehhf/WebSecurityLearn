@@ -206,13 +206,41 @@ socks5  127.0.0.1 1080
 
 在需要代理的命令前加上 `proxychains4` ，如：
 ```
+proxychains4 curl ip.sb
+
 proxychains4 git clone git://github.com/WordPress/WordPress.git
 ```
 
 
 ![](images/proxychains使用1.jpg)
 
+#### 使用tsocks
 
+```
+apt-get install tsocks
+vim /etc/tsocks.conf
+```
+
+配置如下:
+```
+local = 192.168.0.0/255.255.255.0
+local = 10.0.0.0/255.0.0.0
+path {
+	reaches = 150.0.0.0/255.255.0.0
+	reaches = 150.1.0.0:80/255.255.0.0
+	server = 10.1.7.25
+	server_type = 5
+	default_user = delius
+	default_pass = hello
+}
+server = 127.0.0.1
+server_type = 5
+server_port = 1080 
+```
+使用:
+```
+tsocks curl ip.sb
+```
 
 #### 参考链接:
 

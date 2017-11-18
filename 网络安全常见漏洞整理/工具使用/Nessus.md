@@ -63,7 +63,16 @@ proxychains4 /opt/nessus/sbin/nessuscli update
 ```
 再次访问`https://ip:8834/`,会出现`Initializing, please wait...`,速度奇慢无比,不过不会出错,慢慢等就行了。
 
+
+#### 也可以使用`docker`镜像
+```
+docker search nessus
+
+dao pull sometheycallme/docker-nessus
+docker run -d -p 8834:8834  sometheycallme/docker-nessus
+```
 <hr>
+
 
 ## Nessus 使用
 

